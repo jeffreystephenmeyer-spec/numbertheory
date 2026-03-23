@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp1sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>What are integers</title>
+
+  <p> Text of section. </p>
+
+
+  <question>
+		<title>What are integers?</title>
+		<p>
+			We work with integers every day - but what are they?!  Give your definition of integers.
+		</p>
+	</question>
+
+
+  <definition xml:id="def-definition-commutative-ring">
+    <title>Commutative Ring with Identity</title>
+    <statement>
+        <p>
+            A <term>commutative ring with identity</term> is a set <m>R</m> with two binary operations: 
+            <ol>
+              <li>
+                <p>
+                  an addition operation <m>+</m> and a
+                </p>
+              </li>
+              <li>
+                 <p>
+                  multiplication operation <m>\cdot</m>
+                </p>
+              </li>
+            </ol>
+            satisfying 6 axioms:
+            <ol>
+              <li>
+                <p>
+                  (Addition is <term>associative</term>.) If <m>a,b,c \in R</m>, then <m>(a+b)+c=a+(b+c)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (Addition has an <term>identity</term>.) If <m>a \in R</m>, then <m>(a+b)+c=a+(b+c)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (Addition has <term>inverses</term>.) If <m>a \in R</m>, then there exists <m>-a \in R</m> so that <m>a+(-a)0</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (Addition is <term>commutative</term>.) If <m>a,b,c \in R</m>, then <m>a+b=(b+a)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (Multiplication is <term>associative</term>.) If <m>a,b,c \in R</m>, then <m>(ab)c=a(bc)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (Multiplication has an <term>identity</term>.) If <m>a \in R</m>, then <m>1a=a</m>
+                </p>
+              </li>
+            </ol>
+        </p>
+    </statement>
+  </definition>
+
+
+
+
+</section>
