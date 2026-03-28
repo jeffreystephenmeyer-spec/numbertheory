@@ -5,18 +5,24 @@
 
   <p> </p>
 
-    <definition xml:id="def-definition-divisibility">
+    <definition xml:id="definition-divisibility">
     <title>Divisibility</title>
     <statement>
         <p>
             An integer <m> a </m> is <term>divisible</term> by an integer <m>b</m> if there exists an integer <m>c</m> so that <m>a=bc</m>.  
         </p>
+
+        <p>
+          If <m> a </m> is divisible by <m>b</m>, we say also say <m>b</m> <term>divides</term> <m>a</m>.  We symbolize this by <m>b\mid a</m>.  We say that <m>b</m> is a <term>divisor</term> of <m>a</m>.
+        </p>
+
+        <p>
+          If <m>b</m> does not divide <m>a</m>, then we write <m>b\nmid a</m>. 
+        </p>
     </statement>
   </definition>
   
-<p>
-  If <m> a </m> is divisible by <m>b</m>, we say also say <m>b</m> <term>divides</term> <m>a</m>.  We symbolize this by <m>b\mid b</m>.  If <m>b</m> does not divide <m>a</m>, then we write <m>b\nmid b</m>. We say that <m>b</m> is a <term>divisor</term> of <m>a</m>.
-</p>
+
 
 <proposition xml:id="prop-2-0">
   <title></title>
@@ -44,7 +50,7 @@
   </statement>
   <proof>
     <p>
-      ggg
+      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> and Definition <xref ref="definition-commutative_ring"/> useful.
     </p>
   </proof>
 </proposition>
@@ -60,7 +66,7 @@
   </statement>
   <proof>
     <p>
-      ggg
+      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
     </p>
   </proof>
 </proposition>
@@ -69,17 +75,46 @@
   <title></title>
   <statement>
     <p>
-      If <m>a,b,c\in \Z</m> where <m>c\mid a</m> and <m>c\mid b</m>, then for any  <m>x,y\in \Z</m> <m>a\mid ax+by</m>.
+      If <m>a,b,c\in \Z</m> and <m>c\mid a</m>, then <m>c \mid ab</m>.
     </p>
   </statement>
   <proof>
     <p>
-      ggg
+      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
     </p>
   </proof>
 </proposition>
 
 <proposition xml:id="prop-2-3">
+  <title></title>
+  <statement>
+    <p>
+      If <m>a,b,c\in \Z</m> where <m>c\mid a</m> and <m>c\mid b</m>, then <m>c\mid ax+by</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+<!-- <proposition xml:id="prop-2-2">
+  <title></title>
+  <statement>
+    <p>
+      If <m>a,b,c\in \Z</m> where <m>c\mid a</m> and <m>c\mid b</m>, then for any  <m>x,y\in \Z</m> <m>c\mid ax+by</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
+    </p>
+  </proof>
+</proposition> -->
+
+<proposition xml:id="prop-2-4">
   <title>The Division Algorithm</title>
   <statement>
     <p>
@@ -100,7 +135,14 @@
   </statement>
   <proof>
     <p>
-      ggg
+      Try a proof by cases.  If <m> a \le b </m> then we are done (why???).  So then assume <m> a&gt;b </m>.  Consider the set 
+      
+      <me> 
+        S = \{a-bk \mid  k \in \Z \text{ and } a-bk &gt; 0 \}
+      </me>
+
+      The set <m>S</m> is nonempty (why???).  The set <m>S</m> has a minimal element (why???).  Call this minimal element <m>r</m>.  Show that this <m>r</m> has the desired properties.
+      You may find Definition <xref ref="definition-well-ordered"/> and Definition <xref ref="definition-well-ordered"/> useful.
     </p>
   </proof>
 </proposition>

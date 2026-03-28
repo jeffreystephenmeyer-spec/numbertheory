@@ -5,7 +5,7 @@
 
   <p>  </p>
 
-  <definition xml:id="def-definition-commutative-ring">
+  <definition xml:id="definition-commutative_ring">
     <title>Commutative Ring with Identity</title>
     <statement>
         <p>
@@ -22,39 +22,44 @@
                 </p>
               </li>
             </ol>
-            satisfying 6 axioms:
-            <ol>
-              <li>
+            satisfying 7 axioms:
+            <dl width="narrow">
+              <li><title>(R1)</title>
                 <p>
-                  (Addition is <term>associative</term>.) If <m>a,b,c \in R</m>, then <m>(a+b)+c=a+(b+c)</m>
+                  (Addition is <term>associative</term>.) If <m>a,b,c \in R</m>, then <m>(a+b)+c=a+(b+c)</m>.
                 </p>
               </li>
-              <li>
+              <li><title>(R2)</title>
                 <p>
-                  (Addition has an <term>identity</term>.) If <m>a \in R</m>, then <m>(a+b)+c=a+(b+c)</m>
+                  (Addition has an <term>identity</term>.) There exists an element <m>0 \in R</m> with the property that, if <m>a \in R</m>, then <m>0+a=a</m>.  We call <m>0</m> a <term>zero</term>.
                 </p>
               </li>
-              <li>
+              <li><title>(R3)</title>
                 <p>
-                  (Addition has <term>inverses</term>.) If <m>a \in R</m>, then there exists <m>-a \in R</m> so that <m>a+(-a)0</m>
+                  (Addition has <term>inverses</term>.) If <m>a \in R</m>, then there exists an element <m>-a \in R</m> so that <m>a+(-a)=0</m>.  We call <m>-a</m> an <term>additive inverse</term> to <m>a</m>.
                 </p>
               </li>
-              <li>
+              <li><title>(R4)</title>
                 <p>
-                  (Addition is <term>commutative</term>.) If <m>a,b,c \in R</m>, then <m>a+b=(b+a)</m>
+                  (Addition is <term>commutative</term>.) If <m>a,b\in R</m>, then <m>a+b=(b+a)</m>.
                 </p>
               </li>
-              <li>
+              <li><title>(R5)</title>
                 <p>
-                  (Multiplication is <term>associative</term>.) If <m>a,b,c \in R</m>, then <m>(ab)c=a(bc)</m>
+                  (Multiplication is <term>associative</term>.) If <m>a,b,c \in R</m>, then <m>(ab)c=a(bc)</m>.
                 </p>
               </li>
-              <li>
+              <li><title>(R6)</title>
                 <p>
-                  (Multiplication has an <term>identity</term>.) If <m>a \in R</m>, then <m>1a=a</m>
+                  (Multiplication has an <term>identity</term>.) There exists an element <m>1 \in R</m> with the property that, if <m>a \in R</m>, then <m>1a=a</m>.  We call <m>1</m> a <term>one</term>.
                 </p>
               </li>
-            </ol>
+              <li><title>(R7)</title>
+                <p>
+                  (Multiplication <term>distributes</term> across addition.) If <m>a, b, c \in R</m>, then <m>a(b+c)=ab+ac</m>.
+                </p>
+              </li>
+            </dl>
         </p>
     </statement>
   </definition>
@@ -63,12 +68,12 @@
   <title>s</title>
   <statement>
     <p>
-      If <m>R</m> is a commutative ring with identity, and <m>a \in R</m> <m>0a=0</m>.  
+      If <m>R</m> is a commutative ring with identity and <m>a \in R</m>, then <m>0a=0</m>.  
     </p>
   </statement>
   <proof>
     <p>
-      ggg
+      Try a direct proof. Analyze the sum <m>a0+a0</m>.  You may find ring properties (R7), (R2), and (R3) in <xref ref="definition-commutative_ring"/> useful.
     </p>
   </proof>
 </proposition>
@@ -82,7 +87,7 @@
   </statement>
   <proof>
     <p>
-      ggg
+      Try a direct proof. Analyze the sum <m>(1)a+(-1)a</m>. You may find <xref ref="definition-commutative_ring"/> and <xref ref="prop-1_1-01"/> useful.
     </p>
   </proof>
 </proposition>

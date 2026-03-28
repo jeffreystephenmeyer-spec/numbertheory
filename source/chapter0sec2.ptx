@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp0sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Mental Act of Proving</title>
+
+  <subsection xml:id="chp0sec2sub1">
+    <title>Conditional Statements</title>
+
+    <p>
+      A <term>conditional statement</term> is a statement of the form:
+    </p>
+
+    <p>
+      <em>If premise p is true, then conclusion q is true.</em>
+    </p>
+
+    <p> or state more succinctly, </p>
+
+    <p>
+      <em>If p, then q.</em>
+    </p>
+
+    <p>
+      To say that the conditional statement (if p, then q) is true, is to say that the truth of p logically implies the truth of q.  One of the goals of formal mathematics is to formulate conditional statements and to then deduce whether or not they are true. Observe, if p is true AND the conditional statement (if p, then q) is true, then we can deduce that q is true!
+    </p>
+
+    <p>
+      Lemmas, Propositions, Theorems, and Corollaries all are labels we give to conditional statements.  
+    
+    
+      <ol>
+        <li>
+          <p>
+            <term>Lemma</term> - Small results that are building blocks.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Propositions</term> - Average results.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Theorem</term> - Major results (either due to their importance or complexity).
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Corollary</term> - Consequences of bigger results.
+          </p>
+        </li>
+      </ol>
+
+    </p>
+  </subsection>
+
+  <subsection xml:id="chp0sec2sub2">
+    <title>Proving</title>
+
+    <p>
+      The process of deducing the truth of a conditional statement called <term>proving</term>. The act of proving involves properly sequencing and invoking axioms, definitions, and other previously proven conditional statements. The end result of this action is something that you write down. The thing you have produced is a <term>proof</term>.  Proofs are important forms of mathematical knowledge (not just the conditional statement they are proving).  They are a mathematical goal in and of themselves!
+    </p>
+
+    <p>
+      Proving a statement can be hard.  In this course, you will not only learn how to read proofs, but also productive strategies for proving. 
+    </p>
+  </subsection>
+
+  <subsection xml:id="chp0sec2sub3">
+    <title>Proof Sketch</title>
+
+    <p>
+      You will often begin your proof process with a <term>proof sketch</term> of your ideas in which you outline the definitions and propositions you think you will use and how you might put them together.  A proof sketch is a good starting place <em>before</em> writing your final formal proof for submission.  Proof sketches can use incomplete sentences, notational shorthand, and leave out specific details. In general, always start a proof with a proof sketch.
+    </p>
+  </subsection>
+
+  <subsection xml:id="chp0sec2sub4">
+    <title>Proof Construction Strategies</title>
+
+    <p>
+      There is no "formula" for constructing a proof.  Constructing proofs is a form of problem solving that can be complex.  Rather, there are many proof construction strategies we will cover. Proof construction strategies are fundamental ways of mathematical thinking.  
+    </p>
+
+    <p> 
+      Throughout the course, we will explicitly name and use specific proof construction strategies, such as:
+
+      <ol>
+        <li>
+          <p>
+            Know your definitions and allow your definitions to structure your proof.
+          </p>
+        </li>
+        <li>
+          <p>
+            What does the conditional statement even mean?  Reinterpret the formal statement in terms of a simple situation or example you understand.  What does the statement mean here and why is it true here?  Once you have made sense of the statement for familiar objects, return to the formal context.
+          </p>
+        </li>
+        <li>
+          <p>
+            Work backwards!  Think about what you need to show.  Then write down what must be true for this conclusion to be true.  Continue working backwards until you have found a statement you know how to prove.
+          </p>
+        </li>
+        <li>
+          <p>
+            Have you seen a similar proposition whose proof you have seen before.  Revisit and reflect upon that proof.  Leverage the structure and strategies of that existing proof!
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+
+  <subsection xml:id="chp0sec2sub5">
+    <title>Proof Structures</title>
+
+    <p>
+      There are a handful of proof structure we may use: 
+    </p>
+
+    <p> 
+      Throughout the course, we will explicitly name and use specific proof construction strategies, such as:
+
+      <ol>
+        <li>
+          <p>
+            <term>Direct.</term>  Assume the truth of premise p.  The truth of p invokes axioms, definitions, and theorem-type statements. Use these to deduce q is true.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Contrapositive.</term>  (If p, then q) is logically equivalent to (If not q, then not p).  So, instead of directly deducing (If p, then q), you directly deduce (If not q, then not p). 
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Proof By Contradiction.</term>  Suppose both p <em>and</em> not q.  Use direct logic to then deduce a true thing to be false (<term>contradiction</term>)).   Conclude that q cannot be true.  
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Proof By Cases.</term>  Divide and conquer.  Split up the premise into <term>cases</term> and prove each case individually using the structures above.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+
+
+</section>

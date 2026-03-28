@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp0sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Pedagogy of this Book</title>
+
+  <p>
+    This book is grounded in the evidenced-based teaching method called <term>Inquiry-Based Learning</term>, which is commonly abbreviated as <term>IBL</term>.  If you are expecting a traditional lecture-based course, IBL may seem a bit unusual, but trust me, it is worth it.  In math education research, IBL has consistently been shown to improve student outcomes as compared to traditional lecture-based courses. Below, I have included an excerpt from a paper on IBL outlining IBL in greater detail.
+  </p>
+
+  <p>
+    In this IBL course, you will actively construct the formal number theory (as opposed to passively taking notes).  I have carefully sequenced and grouped the proposition for you to prove.  I have included scaffolded hints to assist you in your proof construction.    This book is designed to be <em>experienced</em>, not just read.  Part of the experience included the following sequence of actions:
+
+
+    <ol>
+      <li>
+        <p>
+          <alert>Before Class.</alert> You are to familiarize yourself with the upcoming definitions and propositions.
+        </p>
+      </li>
+      <li>
+        <p>
+          <alert>During Class.</alert> You will work with your groups to write on the board and be prepared to present proof sketches.
+        </p>
+      </li>
+      <li>
+        <p>
+          <alert>After Class.</alert> While fresh in your mind, you will carefully write up an RVF-complete formal proof of each proposition covered in class.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+<p> 
+  The following page is an excerpt from: Laursen, S. L., &amp; Rasmussen, C. (2019). <em>I on the prize: Inquiry approaches in undergraduate mathematics.</em>  International Journal of Research in Undergraduate Mathematics Education. 
+  <url href="https://doi.org/10.1007/s40753-019-00085-6" visual="example.com">Link to paper.</url>
+</p>
+
+
+<blockquote>
+  <p><alert>What is Inquiry in Mathematics?</alert></p>
+
+  <p>
+    We begin by situating inquiry within the broader landscape of active learning and teaching.  Decades ago, Bonwell and Eison (1991) defined active teaching strategies as those that "involve students in doing things and thinking about what they are doing" (p. 19). Students may "do" and "think" by reading, writing, discussing, or solving problems, but they must take part in higher-order thinking tasks such as analysis, synthesis and evaluation. We add to this definition the explicit expectation that students talk to each other about what they are doing and thinking, as conversations are powerful in clarifying, solidifying, and elaborating learners' ideas. They also take advantage of the inherently social nature of classrooms and provide the instructor with the feedback needed to identify fruitful next steps toward her learning goals for students.
+  </p>
+  
+  <p>
+    The instructor's role is to orchestrate this doing, thinking, and talking - to choose the important mathematical ideas and to develop tasks that enable students to meet and grapple with them; to structure opportunities in advance for students to reflect, analyze, synthesize, and communicate, and to make use of student ideas to structure these opportunities in the moment; to ensure that all students have an equal chance to participate and grow. This does not mean there is no instructor talk, but rather that such talk is well timed and well targeted to surface and explore students' prior knowledge, to help students organize or connect important ideas, and to support students' changing views (Neumann, 2014). As Campbell and coauthors (2017) show in their multi-institution observation study, these cognitively responsive practices are often missing, even in classes that feature interactive and hands-on activities. Instructor skill and thought are required to make active learning truly active.
+  </p>
+  
+  <p>
+    We consider inquiry a branch of active learning. As with active learning more generally, students in inquiry classrooms are engaged in doing mathematics, and the instructor is orchestrating and structuring student learning opportunities. Inquiry, however, has several additional distinguishing characteristics. First, inquiry curricula exhibit a longer-term trajectory that sequences daily tasks to build toward big ideas. These coherent task sequences scaffold students' mathematical work on challenging problems over weeks of instruction and may lead to proving a major theorem or (re)inventing a mathematical idea, definition, or procedure. To support such task sequences, instructors must deeply understand the mathematics so they can capitalize on students' mathematical ideas, thus recognizing and nurturing the seeds of student ideas that have the potential to grow and develop, without getting lost in the weeds. A good task sequence of course helps to provide the framework. 
+  </p> 
+  
+  <p>
+    A second distinguishing characteristic of inquiry is the nature of students' mathematical work. In inquiry classrooms students reinvent or create mathematics that is new to them. They do so by engaging in mathematical practices similar to those of practicing mathematicians: conjecturing and proving, defining, creating and using algorithms, and modeling (Moschkovitz, 2002; Rasmussen, Zandieh, King, &amp; Teppo, 2005). As such, students not only develop deep mathematical understanding, but they also develop a sense of ownership through creation and reinvention. Instructors, for their part, allow students intellectual space to be creative, while at the same time they seek ways to extend student ideas and connect these to formal or conventional mathematics. This requires adaptive and responsive facilitation skills, not just expertise in exposition and delivery of content.
+  </p>
+  <attribution>Laursen &amp; Rasmussen (2019)</attribution>
+</blockquote>
+
+
+</section>

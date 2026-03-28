@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp0sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Proof Writing</title>
+
+  <subsection xml:id="chp0sec3sub1">
+    <title>Formal Proofs</title>
+
+    <p>
+      A <term>formal proof</term> is the final written product you produce.  In a formal proof, you carefully, clearly, and correctly, explain the logical sequence of known results that ascertains the truth of the given mathematical statement.  
+
+      <ol>
+        <li>
+          <p>
+            Formal proofs represent the culmination of your efforts and understanding.  Proof construction can be messy, include detours and red herrings.  The path your proof construction takes is rarely visible from the formal proof itself.
+          </p>
+        </li>
+        <li>
+          <p>
+            Formal proofs are a fundamental manifestation of mathematical knowledge.
+          </p>
+        </li>
+        <li>
+          <p>
+            Formal proofs follow the norms of academic language.  This includes complete sentences and not using mathematical shorthand.  They are proofread.  
+          </p>
+        </li>
+        <li>
+          <p>
+            Formal proofs are clear and readable.
+          </p>
+        </li>
+        <li>
+          <p>
+            Formal proofs appropriately reference known definitions and conditionals.
+          </p>
+        </li>
+      </ol>
+
+    </p>
+    
+    <p>
+      Though I do not require it, I strongly encourage you to use LaTeX to write your formal proofs.  
+    </p>
+    </subsection>
+  <subsection xml:id="chp0sec3sub2">
+    <title>The RVF Rubric</title>
+
+    <p>
+      Your written formal proofs will be assessed via a modified form of the RVF rubric, which is discussed in detail in the following paper:   <url href="http://sigmaa.maa.org/rume/crume2010/Archive/Brown_D.pdf" visual="example.com">RVF Paper.</url> This rubric focuses attention on the following categories, which will be explained below: <em>readability</em>, <em>validity</em>, and <em>fluency</em>.   Assume that an equal weight will be applied to each category that is applicable.  The below descriptions are adapted from the above paper.
+    </p>
+
+    <p>
+      <term>Readability.</term> Your written work will be examined for readability. Obviously, if your written work is not readable it cannot be assessed, but since the ability to communicate Mathematics is a focal point for this class, special attention will be paid to this quality. Strings of equations with no explanation or motivation do not constitute a readable response, and although a carefully chosen, motivated, and explained figure may be worth 1000 words, 1000 figures in and of themselves will be worth nothing. It is in this category that you will be assessed for correctly and clearly referencing appropriate definitions and conditional statements and referencing all used proof strategies.
+    </p>
+
+    <p>
+      <term>Validity.</term> Every proof entails a string of deductions and the extent to which your solution is valid will be analyzed. Validity corresponds to the discernible extent to which your method used is appropriate, your calculations are correct, and your deductions follow the rules of logic.
+    </p>
+
+    <p>
+      <term>Fluency.</term> Mathematics is a concise and precise <em>language</em> and I wish to enhance your fluency with this language. Therefore, part of every assessment will focus on your ability to incorporate correct, established notation and terminology into your written work. An example of a lack of fluency is the use of "top" and "bottom" for the numerator and denominator of a fraction. Another example which is evidence of fluency is using "Let f be a real valued function of a real variable" interchangeably with "Let <m>f : \R \to \R</m>". Other things which are definable perhaps only by an exhaustive list of examples will be assessed as well.  It is in this category that you will be assessed for correct and appropriate use of mathematical symbolism.
+    </p>
+
+  </subsection>
+
+</section>

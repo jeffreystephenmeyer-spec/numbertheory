@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter00" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>How to Use This Book</title>
+
+  <introduction>
+    <p>  </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="chapter0sec1.ptx" />
+  <xi:include href="chapter0sec2.ptx" />
+  <xi:include href="chapter0sec3.ptx" />
+
+</chapter>
