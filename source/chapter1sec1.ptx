@@ -3,7 +3,7 @@
 <section xml:id="chp1sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The algebra of the integers</title>
 
-  <p>  </p>
+  <p>To begin, the integers have certain well-known algebraic properties.  These properties can be summarized by saying that the integers form a <term>commutative ring with identity</term>.</p>
 
   <definition xml:id="definition-commutative_ring">
     <title>Commutative Ring with Identity</title>
@@ -64,6 +64,12 @@
     </statement>
   </definition>
 
+  <p>
+    <alert>Nontriviality assumption:</alert> We assume that the ring <m>R</m> is nontrivial, i.e., <m>0 \ne 1</m>.
+  </p>
+
+  <p>We will establish some basic properties of commutative rings with identity in the following propositions.</p>
+
   <proposition xml:id="prop-1_1-01">
   <title>s</title>
   <statement>
@@ -92,5 +98,7 @@
   </proof>
 </proposition>
 
-
+<p>
+  Both operations of addition and multiplication have a notion of inverse, however we are only guaranteed to have additive inverses.  We will say an element <m>a \in R</m> is <term>multiplicatively invertible</term> if it has a multiplicative inverse, i.e. if there exists an element <m>b \in R</m> such that <m>ab=1</m>.   When it is clear from context, we will simply say <m>a</m> is <term>invertible</term>, or that <m>a</m> is a <term>unit</term>.
+</p>  
 </section>

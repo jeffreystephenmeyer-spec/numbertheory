@@ -3,55 +3,62 @@
 <section xml:id="chp1sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The order of the integers</title>
 
-  <p> </p>
+  <p>In addition to the algebraic structure of the integers, they also possess an ordering.  This ordering is compatible with the algebraic operations and gives us a way to compare integers.</p>
 
-    <definition xml:id="def-definition-order">
-    <title>Order</title>
-    <statement>
-        <p>
-            A set <m>X</m> has a <term>(total) order</term> if there is a binary relationship <m>\le</m> satisfying: 
-            <dl width="narrow">
-              <li><title>(O1)</title>
-                <p>
-                  (<term>reflexivity</term>.) If <m>a\in X</m>, then <m>a\le a </m>
-                </p>
-              </li>
-              <li><title>(O2)</title>
-                <p>
-                  (<term>transitivity</term>.) If <m>a,b,c \in X</m> satisfy <m>a\le b</m> and <m>b\le c</m>, then <m>a \le c</m>
-                </p>
-              </li>
-              <li><title>(O3)</title>
-                <p>
-                  (<term>symmetry</term>.) If <m>a,b \in X</m> satisfy <m>a\le b</m> and <m>b\le a</m>, then <m>a=b</m>
-                </p>
-              </li>
-              <li><title>(O4)</title>
-                <p>
-                  (<term>totality</term>.) If <m>a,b \in X</m>, then one of the following hold: <m>a\le b</m> or <m>b\le a</m>
-                </p>
-              </li>
-            </dl>
-        </p>
+  <definition xml:id="def-definition-order">
+  <title>Order</title>
+  <statement>
+      <p>
+          A set <m>X</m> has a <term>total order</term> if there is a binary relationship <m>\le</m> satisfying: 
+          <dl width="narrow">
+            <li><title>(O1)</title>
+              <p>
+                (<term>Reflexivity</term>.) If <m>a\in X</m>, then <m>a\le a </m>.
+              </p>
+            </li>
+            <li><title>(O2)</title>
+              <p>
+                (<term>Transitivity</term>.) If <m>a,b,c \in X</m> satisfy <m>a\le b</m> and <m>b\le c</m>, then <m>a \le c</m>.
+              </p>
+            </li>
+            <li><title>(O3)</title>
+              <p>
+                (<term>Antisymmetry</term>.) If <m>a,b \in X</m> satisfy <m>a\le b</m> and <m>b\le a</m>, then <m>a=b</m>.
+              </p>
+            </li>
+            <li><title>(O4)</title>
+              <p>
+                (<term>Totality</term>.) If <m>a,b \in X</m>, then either <m>a\le b</m> or <m>b\le a</m>.
+              </p>
+            </li>
+          </dl>
+        If <m>a,b\in X</m>, where <m>a\le b</m> and <m>a \ne b</m>, then we write <m>a &lt; b</m>.  The expressions <m>a \le b</m> and <m>b \ge a</m> are equivalent.
+      </p>
     </statement>
   </definition>
 
+  <p>
+    Observe the symbols <m>\le</m>, <m>\ge</m>, <m>&lt;</m>, and <m>&gt;</m> will all be used in the usual ways.
+  </p>
 
+  <p>
+    A ring <m>R</m> is an <term>ordered ring</term> if <m>R</m> has a total order <m>\le </m> that is compatible with its operations as made precise in the following definition.  
+  </p>
 
   <definition xml:id="definition-ordered-ring">
     <title>Ordered Ring</title>
     <statement>
         <p>
-            A ring <m>R</m> is an <term>ordered ring</term> if <m>R</m> has a (total) order that is compatible with its operations by satisfying: 
+            A ring <m>R</m> is an <term>ordered ring</term> if <m>R</m> has a total order <m>\le </m> satisfying: 
             <dl width="narrow">
                <li><title>(OR1)</title>
                 <p>
-                  (<term>translation</term>.) If <m>a,b,c \in R</m> and <m>a\le b</m>, then <m>a +c\le b+c</m>
+                  (<term>Addition preserves order</term>.) If <m>a,b,c \in R</m> and <m>a\le b</m>, then <m>a +c\le b+c</m>
                 </p>
               </li>
               <li><title>(OR2)</title>
                 <p>
-                  (<term>scaling</term>.) If <m>a,b \in R</m> satisfy <m>0 \le a</m> and <m>0 \le b</m>, then <m>0\le ab</m>
+                  (<term>Positive scaling preserves order</term>.) If <m>a,b \in R</m> satisfy <m>0 \le a</m> and <m>0 \le b</m>, then <m>0\le ab</m>
                 </p>
               </li>
             </dl>
@@ -60,13 +67,10 @@
   </definition>
 
   <p>
-  Observe the symbols <m>\le</m>, <m>\ge</m>, <m>&lt;</m>, and <m>&gt;</m> will all be used in the usual ways.
-</p>
-  
-  <p>
     We call elements of an ordered ring <term> positive </term> if it is greater than zero and <term> negative </term> if it is less than zero.
   </p>
 
+<p>We will establish some basic properties of ordered rings in the following propositions.</p>
 
 <proposition xml:id="prop-01">
   <title></title>
@@ -92,13 +96,10 @@
   </statement>
   <proof>
     <p>
-      Try a proof by contradiction.  We know it must be the case that <m>0 \le ab \le ac</m> (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened and how does the invertibility of <m>a</m> lead to a contradiction?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
+      Try a proof by contradiction.  We know it must be the case that <m>0 \le ab \le ac</m> (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of <m>a</m> lead to a contradiction?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
     </p>
   </proof>
 </proposition>
-
-
-
 
 <definition xml:id="definition-well-ordered">
   <title>Well-Ordered Set</title>
@@ -117,7 +118,7 @@
   <title></title>
   <statement>
     <p>
-      If <m>R</m> is a ordered ring whose positive elements are well-ordered, then the minimal positive element, <m>e</m> is (multiplicatively) invertible.  
+      If <m>R</m> is an ordered ring whose positive elements are well-ordered, then the minimal positive element, <m>e</m> is (multiplicatively) invertible.  
     </p>
   </statement>
   <proof>
@@ -147,18 +148,20 @@
   </proof>
 </proposition>
 
+<p>
+  Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid.  There are no element between 0 and 1!  
+</p>
 
 <proposition xml:id="prop-04">
   <title></title>
   <statement>
     <p>
-      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>0 &lt; a</m> and <m>0 &lt; b</m>, then <m>0
-        &lt; ab</m>.  
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>0 &lt; a</m> and <m>0 &lt; b</m>, then <m>0 &lt; ab</m>.  
     </p>
   </statement>
   <proof>
     <p>
-      ggg
+      Try a proof by contradiction.  We know it must be the case that <m>0 \le ab</m> (why???) but what could go wrong and how to we show those things cannot happen?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/>, <xref ref="prop-03"/> useful.
     </p>
   </proof>
 </proposition>
@@ -167,12 +170,12 @@
   <title>Well-Ordered Rings are Domains</title>
   <statement>
     <p>
-      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>ab=0</m>, then either <m>a=0</m> or <m>b = 0</m>.  
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>ab=0</m>, then either <m>a = 0</m> or <m>b = 0</m>.  
     </p>
   </statement>
   <proof>
     <p>
-      ggg
+      Try a proof by contrapositive.   You may find  <xref ref="prop-01"/> and <xref ref="prop-04"/> useful.
     </p>
   </proof>
 </proposition>
@@ -186,13 +189,14 @@
   </statement>
   <proof>
     <p>
-      ggg
+      Try a direct proof.  Try algebraically rewriting the equation.  You may find  <xref ref="definition-commutative_ring"/> and <xref ref="prop-06"/> useful.
     </p>
   </proof>
 </proposition>
 
 
-<p> The integers, <m>\Z</m> are in fact the <em>unique </em> ordered commutative ring with identity whose positive elements are well-ordered.  Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.
+<p> 
+  The integers, <m>\Z</m> are in fact the <em>unique </em> ordered commutative ring with identity whose positive elements are well-ordered.  Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.
 </p>
 
 </section>

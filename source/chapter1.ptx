@@ -4,11 +4,19 @@
   <title>Integers</title>
 
   <introduction>
-    <p> In this chapter, we will determine the underlying structure of the integers which will serve as our foundations for the rest of the course. </p>
+    <activity>
+		<title>What are integers?</title>
+		<p>
+			We work with integers every day - but what are they?!  Give your definition of integers.
+		</p>
+  	</activity>
+
+    <p> 
+      In this chapter, we will determine the underlying structure of the integers which will serve as our foundations for the rest of the course. 
+    </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="chapter1sec0.ptx" />
   <xi:include href="chapter1sec1.ptx" />
   <xi:include href="chapter1sec2.ptx" />
 
