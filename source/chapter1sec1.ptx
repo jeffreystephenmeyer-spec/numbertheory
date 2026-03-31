@@ -56,6 +56,11 @@
               </li>
               <li><title>(R7)</title>
                 <p>
+                  (Multiplication is <term>commutative</term>.) If <m>a,b\in R</m>, then <m>ab=ba</m>.
+                </p>
+              </li>
+              <li><title>(R8)</title>
+                <p>
                   (Multiplication <term>distributes</term> across addition.) If <m>a, b, c \in R</m>, then <m>a(b+c)=ab+ac</m>.
                 </p>
               </li>
@@ -79,7 +84,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. Analyze the sum <m>a0+a0</m>.  You may find ring properties (R7), (R2), and (R3) in <xref ref="definition-commutative_ring"/> useful.
+      Try a direct proof. Analyze the sum <m>a0+a0</m>.  You may find ring properties (R8), (R2), and (R3) in <xref ref="definition-commutative_ring"/> useful.
     </p>
   </proof>
 </proposition>
