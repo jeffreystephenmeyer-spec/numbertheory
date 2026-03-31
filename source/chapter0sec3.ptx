@@ -44,23 +44,56 @@
     </p>
     </subsection>
   <subsection xml:id="chp0sec3sub2">
-    <title>The RVF Rubric</title>
+    <title>The Proof Dimensions Rubric</title>
 
     <p>
-      Your written formal proofs will be assessed via a modified form of the RVF rubric, which is discussed in detail in the following paper:   <url href="http://sigmaa.maa.org/rume/crume2010/Archive/Brown_D.pdf" visual="example.com">RVF Paper.</url> This rubric focuses attention on the following categories, which will be explained below: <em>readability</em>, <em>validity</em>, and <em>fluency</em>.   Assume that an equal weight will be applied to each category that is applicable.  The below descriptions are adapted from the above paper.
+      Your written formal proofs will be assessed via six dimensions described below.  These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.  
     </p>
 
     <p>
-      <term>Readability.</term> Your written work will be examined for readability. Obviously, if your written work is not readable it cannot be assessed, but since the ability to communicate Mathematics is a focal point for this class, special attention will be paid to this quality. Strings of equations with no explanation or motivation do not constitute a readable response, and although a carefully chosen, motivated, and explained figure may be worth 1000 words, 1000 figures in and of themselves will be worth nothing. It is in this category that you will be assessed for correctly and clearly referencing appropriate definitions and conditional statements and referencing all used proof strategies.
+      <term>Global structure summary.</term>  A proof is expected to have a global structure summary.  This is a brief statement at the beginning of the proof that outlines the overall strategy and key steps of the proof.  A global structure summary helps the reader understand the overall flow of the proof and provides a roadmap for the logical deductions that follow.  A global structure summary should include a clear statement of the proof strategy being used, such as direct proof, proof by contradiction, or proof by induction.  It should also briefly outline the key steps that will be taken to establish the truth of the statement being proved.
+    </p>    
+
+    <p>
+      <term>Global structure enacted.</term>  A proof is expected to be clearly structured and organized.  The logical flow of the proof should be easy to follow, with each step building upon the previous ones in a coherent manner.  A well-structured proof allows the reader to understand the progression of ideas and the connections between different parts of the proof.
+    </p>
+
+    <remark xml:id="chp0sec3-remark1">
+      <title>The importance of global structure</title>
+      <statement>
+        <p>
+          Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized.  For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.
+        </p>
+      </statement>
+    </remark>
+
+    <p>
+      <term>Logical correctness.</term>  A proof is logically correct if all of its deductions follow the rules of logic and correctly invoke definitions and known conditional statements.  
     </p>
 
     <p>
-      <term>Validity.</term> Every proof entails a string of deductions and the extent to which your solution is valid will be analyzed. Validity corresponds to the discernible extent to which your method used is appropriate, your calculations are correct, and your deductions follow the rules of logic.
+      <term>Logical completeness.</term>  A proof is logically complete if all necessary steps are included and that the logical flow of the proof is clear and unbroken.  A proof that is logically correct but not logically complete may have gaps in the logical flow or may omit necessary steps, making it difficult for the reader to understand how the conclusion follows from the premises.
+    </p>
+
+    <remark xml:id="chp0sec3-remark2">
+      <title>Completeness and correctness</title>
+      <statement>
+        <p>
+          Completeness and correctness are related but distinct dimensions.  A proof can be logically correct but not logically complete.  Completeness is a higher standard than correctness.  A proof that is logically complete is also logically correct, but a proof that is logically correct may not be logically complete.
+        </p>
+      </statement>
+    </remark>
+
+    <p>
+      <term>Referencing.</term>  You are expected to reference appropriate definitions and conditional statements.  
     </p>
 
     <p>
-      <term>Fluency.</term> Mathematics is a concise and precise <em>language</em> and I wish to enhance your fluency with this language. Therefore, part of every assessment will focus on your ability to incorporate correct, established notation and terminology into your written work. An example of a lack of fluency is the use of "top" and "bottom" for the numerator and denominator of a fraction. Another example which is evidence of fluency is using "Let f be a real valued function of a real variable" interchangeably with "Let <m>f : \R \to \R</m>". Other things which are definable perhaps only by an exhaustive list of examples will be assessed as well.  It is in this category that you will be assessed for correct and appropriate use of mathematical symbolism.
+      <term>Mathematical fluency.</term>  Mathematics is a language, and as such, it has its own syntax and vocabulary.  The extent to which you are fluent in this language will be assessed.  Fluency includes the correct use of mathematical symbols and notation, the correct use of mathematical terminology, and the ability to express mathematical ideas in a concise and precise manner.
     </p>
+
+
+    
 
   </subsection>
 
