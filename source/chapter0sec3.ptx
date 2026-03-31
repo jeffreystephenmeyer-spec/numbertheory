@@ -44,7 +44,7 @@
     </p>
     </subsection>
   <subsection xml:id="chp0sec3sub2">
-    <title>The Proof Dimensions Rubric</title>
+    <title>The Proof Dimensions Rubric (PDR)</title>
 
     <p>
       Your written formal proofs will be assessed via six dimensions described below.  These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.  
@@ -79,7 +79,7 @@
       <title>Completeness and correctness</title>
       <statement>
         <p>
-          Completeness and correctness are related but distinct dimensions.  A proof can be logically correct but not logically complete.  Completeness is a higher standard than correctness.  A proof that is logically complete is also logically correct, but a proof that is logically correct may not be logically complete.
+          A proof can be logically correct but not logically complete.  In practice, for a proof to be logically complete, it is already logically correct.  
         </p>
       </statement>
     </remark>
