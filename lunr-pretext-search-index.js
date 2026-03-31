@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "0.3",
   "title": "Proof Writing",
-  "body": " Proof Writing   Formal Proofs  A formal proof is the final written product you produce. In a formal proof, you carefully, clearly, and correctly, explain the logical sequence of known results that ascertains the truth of the given mathematical statement.   Formal proofs represent the culmination of your efforts and understanding. Proof construction can be messy, include detours and red herrings. The path your proof construction takes is rarely visible from the formal proof itself.    Formal proofs are a fundamental manifestation of mathematical knowledge.    Formal proofs follow the norms of academic language. This includes complete sentences and not using mathematical shorthand. They are proofread.    Formal proofs are clear and readable.    Formal proofs appropriately reference known definitions and conditionals.     Though I do not require it, I strongly encourage you to use LaTeX to write your formal proofs.    The RVF Rubric  Your written formal proofs will be assessed via a modified form of the RVF rubric, which is discussed in detail in the following paper: RVF Paper. This rubric focuses attention on the following categories, which will be explained below: readability , validity , and fluency . Assume that an equal weight will be applied to each category that is applicable. The below descriptions are adapted from the above paper.   Readability. Your written work will be examined for readability. Obviously, if your written work is not readable it cannot be assessed, but since the ability to communicate Mathematics is a focal point for this class, special attention will be paid to this quality. Strings of equations with no explanation or motivation do not constitute a readable response, and although a carefully chosen, motivated, and explained figure may be worth 1000 words, 1000 figures in and of themselves will be worth nothing. It is in this category that you will be assessed for correctly and clearly referencing appropriate definitions and conditional statements and referencing all used proof strategies.   Validity. Every proof entails a string of deductions and the extent to which your solution is valid will be analyzed. Validity corresponds to the discernible extent to which your method used is appropriate, your calculations are correct, and your deductions follow the rules of logic.   Fluency. Mathematics is a concise and precise language and I wish to enhance your fluency with this language. Therefore, part of every assessment will focus on your ability to incorporate correct, established notation and terminology into your written work. An example of a lack of fluency is the use of \"top\" and \"bottom\" for the numerator and denominator of a fraction. Another example which is evidence of fluency is using \"Let f be a real valued function of a real variable\" interchangeably with \"Let \". Other things which are definable perhaps only by an exhaustive list of examples will be assessed as well. It is in this category that you will be assessed for correct and appropriate use of mathematical symbolism.   "
+  "body": " Proof Writing   Formal Proofs  A formal proof is the final written product you produce. In a formal proof, you carefully, clearly, and correctly, explain the logical sequence of known results that ascertains the truth of the given mathematical statement.   Formal proofs represent the culmination of your efforts and understanding. Proof construction can be messy, include detours and red herrings. The path your proof construction takes is rarely visible from the formal proof itself.    Formal proofs are a fundamental manifestation of mathematical knowledge.    Formal proofs follow the norms of academic language. This includes complete sentences and not using mathematical shorthand. They are proofread.    Formal proofs are clear and readable.    Formal proofs appropriately reference known definitions and conditionals.     Though I do not require it, I strongly encourage you to use LaTeX to write your formal proofs.    The Proof Dimensions Rubric  Your written formal proofs will be assessed via six dimensions described below. These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.   Global structure summary. A proof is expected to have a global structure summary. This is a brief statement at the beginning of the proof that outlines the overall strategy and key steps of the proof. A global structure summary helps the reader understand the overall flow of the proof and provides a roadmap for the logical deductions that follow. A global structure summary should include a clear statement of the proof strategy being used, such as direct proof, proof by contradiction, or proof by induction. It should also briefly outline the key steps that will be taken to establish the truth of the statement being proved.   Global structure enacted. A proof is expected to be clearly structured and organized. The logical flow of the proof should be easy to follow, with each step building upon the previous ones in a coherent manner. A well-structured proof allows the reader to understand the progression of ideas and the connections between different parts of the proof.   The importance of global structure   Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized. For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.     Logical correctness. A proof is logically correct if all of its deductions follow the rules of logic and correctly invoke definitions and known conditional statements.   Logical completeness. A proof is logically complete if all necessary steps are included and that the logical flow of the proof is clear and unbroken. A proof that is logically correct but not logically complete may have gaps in the logical flow or may omit necessary steps, making it difficult for the reader to understand how the conclusion follows from the premises.   Completeness and correctness   Completeness and correctness are related but distinct dimensions. A proof can be logically correct but not logically complete. Completeness is a higher standard than correctness. A proof that is logically complete is also logically correct, but a proof that is logically correct may not be logically complete.     Referencing. You are expected to reference appropriate definitions and conditional statements.   Mathematical fluency. Mathematics is a language, and as such, it has its own syntax and vocabulary. The extent to which you are fluent in this language will be assessed. Fluency includes the correct use of mathematical symbols and notation, the correct use of mathematical terminology, and the ability to express mathematical ideas in a concise and precise manner.   "
 },
 {
   "id": "chp0sec3sub1-2",
@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Readability. "
+  "body": "Global structure summary. "
 },
 {
   "id": "chp0sec3sub2-4",
@@ -106,16 +106,61 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Validity. "
+  "body": "Global structure enacted. "
 },
 {
-  "id": "chp0sec3sub2-5",
+  "id": "chp0sec3-remark1",
   "level": "2",
-  "url": "chp0sec3.html#chp0sec3sub2-5",
+  "url": "chp0sec3.html#chp0sec3-remark1",
+  "type": "Remark",
+  "number": "0.3.1",
+  "title": "The importance of global structure.",
+  "body": " The importance of global structure   Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized. For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.   "
+},
+{
+  "id": "chp0sec3sub2-6",
+  "level": "2",
+  "url": "chp0sec3.html#chp0sec3sub2-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Fluency. "
+  "body": "Logical correctness. "
+},
+{
+  "id": "chp0sec3sub2-7",
+  "level": "2",
+  "url": "chp0sec3.html#chp0sec3sub2-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Logical completeness. "
+},
+{
+  "id": "chp0sec3-remark2",
+  "level": "2",
+  "url": "chp0sec3.html#chp0sec3-remark2",
+  "type": "Remark",
+  "number": "0.3.2",
+  "title": "Completeness and correctness.",
+  "body": " Completeness and correctness   Completeness and correctness are related but distinct dimensions. A proof can be logically correct but not logically complete. Completeness is a higher standard than correctness. A proof that is logically complete is also logically correct, but a proof that is logically correct may not be logically complete.   "
+},
+{
+  "id": "chp0sec3sub2-9",
+  "level": "2",
+  "url": "chp0sec3.html#chp0sec3sub2-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Referencing. "
+},
+{
+  "id": "chp0sec3sub2-10",
+  "level": "2",
+  "url": "chp0sec3.html#chp0sec3sub2-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Mathematical fluency. "
 },
 {
   "id": "chp1sec1",
