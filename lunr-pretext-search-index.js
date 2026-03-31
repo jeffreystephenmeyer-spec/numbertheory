@@ -124,7 +124,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "The algebra of the integers",
-  "body": " The algebra of the integers  To begin, the integers have certain well-known algebraic properties. These properties can be summarized by saying that the integers form a commutative ring with identity .   Commutative Ring with Identity   A commutative ring with identity is a set with two binary operations:   an addition operation and a    multiplication operation    satisfying 7 axioms:  (R1)  (Addition is associative .) If , then .   (R2)  (Addition has an identity .) There exists an element with the property that, if , then . We call a zero .   (R3)  (Addition has inverses .) If , then there exists an element so that . We call an additive inverse to .   (R4)  (Addition is commutative .) If , then .   (R5)  (Multiplication is associative .) If , then .   (R6)  (Multiplication has an identity .) There exists an element with the property that, if , then . We call a one .   (R7)  (Multiplication distributes across addition.) If , then .        Nontriviality assumption: We assume that the ring is nontrivial, i.e., .  We will establish some basic properties of commutative rings with identity in the following propositions.   s   If is a commutative ring with identity and , then .    Try a direct proof. Analyze the sum . You may find ring properties (R7), (R2), and (R3) in useful.     s   If is a commutative ring with identity, and  .    Try a direct proof. Analyze the sum . You may find and useful.    Both operations of addition and multiplication have a notion of inverse, however we are only guaranteed to have additive inverses.   Units   We will say an element is multiplicatively invertible if it has a multiplicative inverse, i.e. if there exists an element such that . When it is clear from context, we will simply say is invertible , or that is a unit .    "
+  "body": " The algebra of the integers  To begin, the integers have certain well-known algebraic properties. These properties can be summarized by saying that the integers form a commutative ring with identity .   Commutative Ring with Identity   A commutative ring with identity is a set with two binary operations:   an addition operation and a    multiplication operation    satisfying 7 axioms:  (R1)  (Addition is associative .) If , then .   (R2)  (Addition has an identity .) There exists an element with the property that, if , then . We call a zero .   (R3)  (Addition has inverses .) If , then there exists an element so that . We call an additive inverse to .   (R4)  (Addition is commutative .) If , then .   (R5)  (Multiplication is associative .) If , then .   (R6)  (Multiplication has an identity .) There exists an element with the property that, if , then . We call a one .   (R7)  (Multiplication distributes across addition.) If , then .        Nontriviality assumption: We assume that the ring is nontrivial, i.e., .  We will establish some basic properties of commutative rings with identity in the following propositions.   Zero times any element is zero   If is a commutative ring with identity and , then .    Try a direct proof. Analyze the sum . You may find ring properties (R7), (R2), and (R3) in useful.     Negative one times any element is the additive inverse   If is a commutative ring with identity, and  .    Try a direct proof. Analyze the sum . You may find and useful.    Both operations of addition and multiplication have a notion of inverse, however we are only guaranteed to have additive inverses.   Units   We will say an element is multiplicatively invertible if it has a multiplicative inverse, i.e. if there exists an element such that . When it is clear from context, we will simply say is invertible , or that is a unit .    "
 },
 {
   "id": "chp1sec1-2",
@@ -150,8 +150,8 @@ var ptx_lunr_docs = [
   "url": "chp1sec1.html#prop-1_1-01",
   "type": "Proposition",
   "number": "1.1.2",
-  "title": "s.",
-  "body": " s   If is a commutative ring with identity and , then .    Try a direct proof. Analyze the sum . You may find ring properties (R7), (R2), and (R3) in useful.   "
+  "title": "Zero times any element is zero.",
+  "body": " Zero times any element is zero   If is a commutative ring with identity and , then .    Try a direct proof. Analyze the sum . You may find ring properties (R7), (R2), and (R3) in useful.   "
 },
 {
   "id": "prop-1_1-02",
@@ -159,8 +159,8 @@ var ptx_lunr_docs = [
   "url": "chp1sec1.html#prop-1_1-02",
   "type": "Proposition",
   "number": "1.1.3",
-  "title": "s.",
-  "body": " s   If is a commutative ring with identity, and  .    Try a direct proof. Analyze the sum . You may find and useful.   "
+  "title": "Negative one times any element is the additive inverse.",
+  "body": " Negative one times any element is the additive inverse   If is a commutative ring with identity, and  .    Try a direct proof. Analyze the sum . You may find and useful.   "
 },
 {
   "id": "definition-unit",
@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "The Division Algorithm",
-  "body": " The Division Algorithm     Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .       If where , then                     Try a direct proof. Let the definitions structure your proof. You may find and useful.     Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.       If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.       If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.      The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.    "
+  "body": " The Division Algorithm     Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .     Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find and useful.     Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.     Divisibility and multiplication   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.     Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .     Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.      The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.    "
 },
 {
   "id": "definition-divisibility",
@@ -321,8 +321,8 @@ var ptx_lunr_docs = [
   "url": "chp2sec1.html#prop-2-0",
   "type": "Proposition",
   "number": "2.1.2",
-  "title": ".",
-  "body": "   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
+  "title": "Basic divisibilities.",
+  "body": " Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
 },
 {
   "id": "prop-2-1",
@@ -339,24 +339,33 @@ var ptx_lunr_docs = [
   "url": "chp2sec1.html#prop-2-2",
   "type": "Proposition",
   "number": "2.1.4",
-  "title": ".",
-  "body": "   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
+  "title": "Divisibility and multiplication.",
+  "body": " Divisibility and multiplication   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
+},
+{
+  "id": "definition-linear_combination",
+  "level": "2",
+  "url": "chp2sec1.html#definition-linear_combination",
+  "type": "Definition",
+  "number": "2.1.5",
+  "title": "Linear Combination.",
+  "body": " Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .   "
 },
 {
   "id": "prop-2-3",
   "level": "2",
   "url": "chp2sec1.html#prop-2-3",
   "type": "Proposition",
-  "number": "2.1.5",
-  "title": ".",
-  "body": "   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
+  "number": "2.1.6",
+  "title": "Divisibility and linear combinations.",
+  "body": " Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
 },
 {
   "id": "prop-2-4",
   "level": "2",
   "url": "chp2sec1.html#prop-2-4",
   "type": "Proposition",
-  "number": "2.1.6",
+  "number": "2.1.7",
   "title": "The Division Algorithm.",
   "body": " The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.   "
 },
@@ -367,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "GCD",
-  "body": " GCD     Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .     Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .    We denote the gcd of integers and by .     If where and , then .    Coming soon...     The Euclidean Algorithm   If where , then    Coming soon...     Bezout Identity   If then there exists so that .    Coming soon...    "
+  "body": " GCD     Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .     Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .    We denote the gcd of integers and by .  The following proposition is foundational for the rest of this chapter. It is a consequence of the division algorithm and the well-ordering principle.   GCD and the Division Algorithm   If where and , then .    Coming soon...     The Euclidean Algorithm   If where , then    Coming soon...     Bezout Identity   If then there exists so that .    Coming soon...    "
 },
 {
   "id": "def-definition-common_divisor",
@@ -393,8 +402,8 @@ var ptx_lunr_docs = [
   "url": "chp2sec2.html#prop-2_2-1",
   "type": "Proposition",
   "number": "2.2.3",
-  "title": ".",
-  "body": "   If where and , then .    Coming soon...   "
+  "title": "GCD and the Division Algorithm.",
+  "body": " GCD and the Division Algorithm   If where and , then .    Coming soon...   "
 },
 {
   "id": "prop-2_2-2",
