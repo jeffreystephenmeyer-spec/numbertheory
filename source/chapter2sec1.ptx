@@ -24,7 +24,7 @@
   
 
 
-<proposition xml:id="prop-2-0">
+<proposition xml:id="proposition-basic_divisibility">
   <title>Basic divisibilities</title>
   <statement>
     <p>
@@ -50,14 +50,14 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> and  <xref ref="definition-commutative_ring"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/>,   <xref ref="definition-commutative_ring"/>, <xref ref="proposition-zero_times_anything_is_zero"/>, and <xref ref="proposition-negative_one_times_anything_is_additive_inverse"/> useful.
     </p>
   </proof>
 </proposition>
 
 
 
-<proposition xml:id="prop-2-1">
+<proposition xml:id="proposition-divisibility_is_transitive">
   <title>Divisibility is transitive</title>
   <statement>
     <p>
@@ -66,12 +66,12 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> and  <xref ref="definition-commutative_ring"/> useful.
     </p>
   </proof>
 </proposition>
 
-<proposition xml:id="prop-2-2">
+<proposition xml:id="proposition-divisibility_of_product">
   <title>Divisibility and multiplication</title>
   <statement>
     <p>
@@ -94,7 +94,7 @@
     </statement>
   </definition>
 
-<proposition xml:id="prop-2-3">
+<proposition xml:id="proposition-divisibility_of_linear_combination">
   <title>Divisibility and linear combinations</title>
   <statement>
     <p>
@@ -109,7 +109,7 @@
 </proposition>
 
 
-<!-- <proposition xml:id="prop-2-2">
+<!-- <proposition xml:id="proposition-divisibility_of_product">
   <title></title>
   <statement>
     <p>
@@ -123,7 +123,7 @@
   </proof>
 </proposition> -->
 
-<proposition xml:id="prop-2-4">
+<proposition xml:id="proposition-division_algorithm">
   <title>The Division Algorithm</title>
   <statement>
     <p>

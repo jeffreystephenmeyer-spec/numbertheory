@@ -125,7 +125,7 @@
   </statement>
   <proof>
     <p>
-      Try a proof by contradiction.  If 1 is negative, then -1 is positive (why???).   So <m>0 &lt; -1</m>.  Multiply by -1.   What do you know about the sign of <m>(-1)^2</m> and why?  Can you find a contradiction?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-unit"/>,  <xref ref="definition-ordered-ring"/>, <xref ref="proposition-inverse_flips_sign"/>, <xref ref="prop-1_1-02"/>, <xref ref="prop-1_1-01"/>, <xref ref="proposition-positive_unit_preserves_inequality"/> useful.
+      Try a proof by contradiction.  If 1 is negative, then -1 is positive (why???).   So <m>0 &lt; -1</m>.  Multiply by -1.   What do you know about the sign of <m>(-1)^2</m> and why?  Can you find a contradiction?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-unit"/>,  <xref ref="definition-ordered-ring"/>, <xref ref="proposition-inverse_flips_sign"/>, <xref ref="proposition-negative_one_times_anything_is_additive_inverse"/>, <xref ref="proposition-zero_times_anything_is_zero"/>, <xref ref="proposition-positive_unit_preserves_inequality"/>, <xref ref="proposition-negative_one_squared_is_one"/>,  useful.
     </p>
   </proof>
 </proposition>

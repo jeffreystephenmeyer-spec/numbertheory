@@ -5,9 +5,7 @@
 
   <p> </p>
 
-
-
-  <definition xml:id="def-definition-common_divisor">
+  <definition xml:id="definition-common_divisor">
     <title>Common Divisor</title>
     <statement>
         <p>
@@ -18,7 +16,7 @@
 
 
 
-  <definition xml:id="def-definition-gcd">
+  <definition xml:id="definition-gcd">
     <title>Greatest Common Divisor (GCD)</title>
     <statement>
         <p>
@@ -35,8 +33,8 @@
   The following proposition is foundational for the rest of this chapter.  It is a consequence of the division algorithm and the well-ordering principle.
 </p>
 
-<proposition xml:id="prop-2_2-1">
-  <title> GCD and the Division Algorithm</title>
+<proposition xml:id="proposition-gcd_and_division_algorithm">
+  <title>GCD and the Division Algorithm</title>
   <statement>
     <p>
       If <m>a,b,q,r\in \Z</m> where <m>b &gt; 0</m> and <m>a = bq+r </m>, then <m>\gcd(a,b) = \gcd(b,r)</m>. 
@@ -44,27 +42,36 @@
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Try a direct proof.  First show that any common divisor of <m>a</m> and <m>b</m> is also a common divisor of <m>b</m> and <m>r</m>.  Then show the converse.  You may find  <xref ref="definition-divisibility"/>, <xref ref="definition-common_divisor"/>, <xref ref="definition-gcd"/>, <xref ref="proposition-divisibility_of_linear_combination"/>  useful.
     </p>
   </proof>
 </proposition>
 
 
-<proposition xml:id="prop-2_2-2">
+<proposition xml:id="proposition-euclidean_algorithm">
   <title>The Euclidean Algorithm</title>
   <statement>
     <p>
-      If <m>a,b\in \Z</m> where <m>b &gt; 0</m>, then 
+      If <m>a,b\in \Z</m> where <m>b &gt; 0</m>, then using the division algorithm repeatedly:
+      <md>
+        <mrow>a  \amp= bq_1 + r_1 \amp\amp\text{where } 0 \le r_1 &lt; b,</mrow>
+        <mrow>b  \amp= r_1 q_2 + r_2 \amp\amp\text{where }0 \le r_2 &lt; r_1,</mrow>
+        <mrow>r_1  \amp= r_2 q_3 + r_3 \amp\amp\text{where }0 \le r_3 &lt; r_2,</mrow>
+        <mrow> \amp\vdots \amp\amp</mrow>  
+        <mrow>r_{n-2}  \amp= r_{n-1} q_{n-1} + r_n \amp\amp\text{where } 0 \le r_n &lt; r_{n-1},</mrow>
+        <mrow>r_{n-1}  \amp= r_n q_n. \amp\amp</mrow>
+      </md>
+      Let <m>r_{n}</m> be the last nonzero remainder.  Then <m>\gcd(a,b) = r_n</m>. 
     </p>
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Try a direct proof.  You may find  <xref ref="proposition-gcd_and_division_algorithm"/> useful.
     </p>
   </proof>
 </proposition>
 
-<proposition xml:id="prop-2_2-3">
+<proposition xml:id="proposition-bezout_identity">
   <title>Bezout Identity</title>
   <statement>
     <p>
@@ -73,7 +80,7 @@
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Try a constructive proof.  Use the Euclidean algorithm to find the gcd and then work backwards to find the coefficients.  You may find  <xref ref="proposition-euclidean_algorithm"/> useful.
     </p>
   </proof>
 </proposition>

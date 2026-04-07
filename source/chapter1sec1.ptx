@@ -75,7 +75,7 @@
 
   <p>We will establish some basic properties of commutative rings with identity in the following propositions.</p>
 
-  <proposition xml:id="prop-1_1-01">
+  <proposition xml:id="proposition-zero_times_anything_is_zero">
   <title>Zero times any element is zero</title>
   <statement>
     <p>
@@ -89,7 +89,7 @@
   </proof>
 </proposition>
 
-<proposition xml:id="prop-1_1-02">
+<proposition xml:id="proposition-negative_one_times_anything_is_additive_inverse">
   <title>Negative one times any element is the additive inverse</title>
   <statement>
     <p>
@@ -98,7 +98,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. Analyze the sum <m>(1)a+(-1)a</m>. You may find <xref ref="definition-commutative_ring"/> and <xref ref="prop-1_1-01"/> useful.
+      Try a direct proof. Analyze the sum <m>(1)a+(-1)a</m>. You may find <xref ref="definition-commutative_ring"/> and <xref ref="proposition-zero_times_anything_is_zero"/> useful.
     </p>
   </proof>
 </proposition>
@@ -125,7 +125,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. You may find <xref ref="definition-commutative_ring"/> and <xref ref="prop-1_1-02"/> useful.
+      Try a direct proof. You may find <xref ref="definition-commutative_ring"/> and <xref ref="proposition-negative_one_times_anything_is_additive_inverse"/> useful.
     </p>
   </proof>
 </proposition>
