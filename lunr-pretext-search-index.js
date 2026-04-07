@@ -190,18 +190,18 @@ var ptx_lunr_docs = [
   "body": " Commutative Ring with Identity   A commutative ring with identity is a set with two binary operations:   an addition operation and a    multiplication operation    satisfying 7 axioms:  (R1)  (Addition is associative .) If , then .   (R2)  (Addition has an identity .) There exists an element with the property that, if , then . We call a zero .   (R3)  (Addition has inverses .) If , then there exists an element so that . We call an additive inverse to .   (R4)  (Addition is commutative .) If , then .   (R5)  (Multiplication is associative .) If , then .   (R6)  (Multiplication has an identity .) There exists an element with the property that, if , then . We call a one .   (R7)  (Multiplication is commutative .) If , then .   (R8)  (Multiplication distributes across addition.) If , then .      "
 },
 {
-  "id": "prop-1_1-01",
+  "id": "proposition-zero_times_anything_is_zero",
   "level": "2",
-  "url": "chp1sec1.html#prop-1_1-01",
+  "url": "chp1sec1.html#proposition-zero_times_anything_is_zero",
   "type": "Proposition",
   "number": "1.1.2",
   "title": "Zero times any element is zero.",
   "body": " Zero times any element is zero   If is a commutative ring with identity and , then .    Try a direct proof. Analyze the sum . You may find ring properties (R8), (R2), and (R3) in useful.   "
 },
 {
-  "id": "prop-1_1-02",
+  "id": "proposition-negative_one_times_anything_is_additive_inverse",
   "level": "2",
-  "url": "chp1sec1.html#prop-1_1-02",
+  "url": "chp1sec1.html#proposition-negative_one_times_anything_is_additive_inverse",
   "type": "Proposition",
   "number": "1.1.3",
   "title": "Negative one times any element is the additive inverse.",
@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The order of the integers",
-  "body": " The order of the integers  In addition to the algebraic structure of the integers, they also possess an ordering. This ordering is compatible with the algebraic operations and gives us a way to compare integers.   Order   A set has a total order if there is a binary relationship satisfying:  (O1)  ( Reflexivity .) If , then .   (O2)  ( Transitivity .) If satisfy and , then .   (O3)  ( Antisymmetry .) If satisfy and , then .   (O4)  ( Totality .) If , then either or .   If , where and , then we write . The expressions and are equivalent.    Observe the symbols , , , and will all be used in the usual ways.  A ring is an ordered ring if has a total order that is compatible with its operations as made precise in the following definition.   Ordered Ring   A ring is an ordered ring if has a total order satisfying:  (OR1)  ( Addition preserves order .) If and , then    (OR2)  ( Positive scaling preserves order .) If satisfy and , then        We call elements of an ordered ring positive if it is greater than zero and negative if it is less than zero.  We will establish some basic properties of ordered rings in the following propositions.   Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.     Multiplication by a positive unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , and useful.     A unit and its multiplicative inverse have the same sign   If is a ordered ring and is a unit, then and have the same sign.    Try a proof by contradiction. Then, without loss of generality, suppose is positive and is negative. So . Think about multipliying this inequality with a couple of known units. Can you find a contradiction? You may find , , , useful.     1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , useful.    "
+  "body": " The order of the integers  In addition to the algebraic structure of the integers, they also possess an ordering. This ordering is compatible with the algebraic operations and gives us a way to compare integers.   Order   A set has a total order if there is a binary relationship satisfying:  (O1)  ( Reflexivity .) If , then .   (O2)  ( Transitivity .) If satisfy and , then .   (O3)  ( Antisymmetry .) If satisfy and , then .   (O4)  ( Totality .) If , then either or .   If , where and , then we write . The expressions and are equivalent.    Observe the symbols , , , and will all be used in the usual ways.  A ring is an ordered ring if has a total order that is compatible with its operations as made precise in the following definition.   Ordered Ring   A ring is an ordered ring if has a total order satisfying:  (OR1)  ( Addition preserves order .) If and , then    (OR2)  ( Positive scaling preserves order .) If satisfy and , then        We call elements of an ordered ring positive if it is greater than zero and negative if it is less than zero.  We will establish some basic properties of ordered rings in the following propositions.   Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.     Multiplication by a positive unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , and useful.     A unit and its multiplicative inverse have the same sign   If is a ordered ring and is a unit, then and have the same sign.    Try a proof by contradiction. Then, without loss of generality, suppose is positive and is negative. So . Think about multipliying this inequality with a couple of known units. Can you find a contradiction? You may find , , , useful.     1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , , , useful.    "
 },
 {
   "id": "def-definition-order",
@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "1.2.6",
   "title": "1 is positive.",
-  "body": " 1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , useful.   "
+  "body": " 1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , , , useful.   "
 },
 {
   "id": "chp1sec3",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Well-Ordering",
-  "body": " Well-Ordering  In addition to the algebraic and order structure of the integers, they also possess a well-ordering.   Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .    Note that to invoke well-ordering, we must certify the set in question is non-empty .   The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.     The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.    Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid. There are no element between 0 and 1!   The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.    We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book.   Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.     Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.     Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.    The integers, are in fact the unique ordered commutative ring with identity whose positive elements are well-ordered. Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.  "
+  "body": " Well-Ordering  In addition to the algebraic and order structure of the integers, they also possess a well-ordering.   Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .    Note that to invoke well-ordering, we must certify the set in question is non-empty .   The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.     The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.    Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid. There are no element between 0 and 1!   The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.    We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book.   Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.     Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.     Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.    The integers, , are in fact the unique ordered commutative ring with identity whose positive elements are well-ordered. Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.  "
 },
 {
   "id": "definition-well-ordered",
@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "The Division Algorithm",
-  "body": " The Division Algorithm     Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .     Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find and useful.     Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.     Divisibility and multiplication   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.     Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .     Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.      The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.    "
+  "body": " The Division Algorithm     Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .     Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find , , , and useful.     Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.     Divisibility and multiplication   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.     Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .     Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.      The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.    "
 },
 {
   "id": "definition-divisibility",
@@ -397,27 +397,27 @@ var ptx_lunr_docs = [
   "body": " Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .   "
 },
 {
-  "id": "prop-2-0",
+  "id": "proposition-basic_divisibility",
   "level": "2",
-  "url": "chp2sec1.html#prop-2-0",
+  "url": "chp2sec1.html#proposition-basic_divisibility",
   "type": "Proposition",
   "number": "2.1.2",
   "title": "Basic divisibilities.",
-  "body": " Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
+  "body": " Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find , , , and useful.   "
 },
 {
-  "id": "prop-2-1",
+  "id": "proposition-divisibility_is_transitive",
   "level": "2",
-  "url": "chp2sec1.html#prop-2-1",
+  "url": "chp2sec1.html#proposition-divisibility_is_transitive",
   "type": "Proposition",
   "number": "2.1.3",
   "title": "Divisibility is transitive.",
-  "body": " Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
+  "body": " Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
 },
 {
-  "id": "prop-2-2",
+  "id": "proposition-divisibility_of_product",
   "level": "2",
-  "url": "chp2sec1.html#prop-2-2",
+  "url": "chp2sec1.html#proposition-divisibility_of_product",
   "type": "Proposition",
   "number": "2.1.4",
   "title": "Divisibility and multiplication.",
@@ -433,18 +433,18 @@ var ptx_lunr_docs = [
   "body": " Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .   "
 },
 {
-  "id": "prop-2-3",
+  "id": "proposition-divisibility_of_linear_combination",
   "level": "2",
-  "url": "chp2sec1.html#prop-2-3",
+  "url": "chp2sec1.html#proposition-divisibility_of_linear_combination",
   "type": "Proposition",
   "number": "2.1.6",
   "title": "Divisibility and linear combinations.",
   "body": " Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
 },
 {
-  "id": "prop-2-4",
+  "id": "proposition-division_algorithm",
   "level": "2",
-  "url": "chp2sec1.html#prop-2-4",
+  "url": "chp2sec1.html#proposition-division_algorithm",
   "type": "Proposition",
   "number": "2.1.7",
   "title": "The Division Algorithm.",
@@ -457,52 +457,52 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "GCD",
-  "body": " GCD     Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .     Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .    We denote the gcd of integers and by .  The following proposition is foundational for the rest of this chapter. It is a consequence of the division algorithm and the well-ordering principle.   GCD and the Division Algorithm   If where and , then .    Coming soon...     The Euclidean Algorithm   If where , then    Coming soon...     Bezout Identity   If then there exists so that .    Coming soon...    "
+  "body": " GCD     Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .     Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .    We denote the gcd of integers and by .  The following proposition is foundational for the rest of this chapter. It is a consequence of the division algorithm and the well-ordering principle.   GCD and the Division Algorithm   If where and , then .    Try a direct proof. First show that any common divisor of and is also a common divisor of and . Then show the converse. You may find , , , useful.     The Euclidean Algorithm   If where , then using the division algorithm repeatedly: Let be the last nonzero remainder. Then .    Try a direct proof. You may find useful.     Bezout Identity   If then there exists so that .    Try a constructive proof. Use the Euclidean algorithm to find the gcd and then work backwards to find the coefficients. You may find useful.    "
 },
 {
-  "id": "def-definition-common_divisor",
+  "id": "definition-common_divisor",
   "level": "2",
-  "url": "chp2sec2.html#def-definition-common_divisor",
+  "url": "chp2sec2.html#definition-common_divisor",
   "type": "Definition",
   "number": "2.2.1",
   "title": "Common Divisor.",
   "body": " Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .   "
 },
 {
-  "id": "def-definition-gcd",
+  "id": "definition-gcd",
   "level": "2",
-  "url": "chp2sec2.html#def-definition-gcd",
+  "url": "chp2sec2.html#definition-gcd",
   "type": "Definition",
   "number": "2.2.2",
   "title": "Greatest Common Divisor (GCD).",
   "body": " Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .   "
 },
 {
-  "id": "prop-2_2-1",
+  "id": "proposition-gcd_and_division_algorithm",
   "level": "2",
-  "url": "chp2sec2.html#prop-2_2-1",
+  "url": "chp2sec2.html#proposition-gcd_and_division_algorithm",
   "type": "Proposition",
   "number": "2.2.3",
   "title": "GCD and the Division Algorithm.",
-  "body": " GCD and the Division Algorithm   If where and , then .    Coming soon...   "
+  "body": " GCD and the Division Algorithm   If where and , then .    Try a direct proof. First show that any common divisor of and is also a common divisor of and . Then show the converse. You may find , , , useful.   "
 },
 {
-  "id": "prop-2_2-2",
+  "id": "proposition-euclidean_algorithm",
   "level": "2",
-  "url": "chp2sec2.html#prop-2_2-2",
+  "url": "chp2sec2.html#proposition-euclidean_algorithm",
   "type": "Proposition",
   "number": "2.2.4",
   "title": "The Euclidean Algorithm.",
-  "body": " The Euclidean Algorithm   If where , then    Coming soon...   "
+  "body": " The Euclidean Algorithm   If where , then using the division algorithm repeatedly: Let be the last nonzero remainder. Then .    Try a direct proof. You may find useful.   "
 },
 {
-  "id": "prop-2_2-3",
+  "id": "proposition-bezout_identity",
   "level": "2",
-  "url": "chp2sec2.html#prop-2_2-3",
+  "url": "chp2sec2.html#proposition-bezout_identity",
   "type": "Proposition",
   "number": "2.2.5",
   "title": "Bezout Identity.",
-  "body": " Bezout Identity   If then there exists so that .    Coming soon...   "
+  "body": " Bezout Identity   If then there exists so that .    Try a constructive proof. Use the Euclidean algorithm to find the gcd and then work backwards to find the coefficients. You may find useful.   "
 },
 {
   "id": "backmatter-2",
