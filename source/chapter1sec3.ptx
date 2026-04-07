@@ -28,7 +28,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let <m>e</m> denote the minimal positive element of <m>R</m>.  (Why does <m>e</m> exist???) If <m>e=1</m>, we are done (why???).  Otherwise <m>0&lt; e &lt; 1</m>.  Look at the descending chain 
+      Try a direct proof.  Let <m>e</m> denote the minimal positive element of <m>R</m>.  (Why does <m>e</m> exist???) If <m>e=1</m>, we are done (why???).  Otherwise <m>0&lt; e &lt; 1</m>.  Look at the descending sequence 
       <me>
         S = \{1-ke \mid k \in \Z \text{ and } 1-ke &gt; 0 \}
       </me> 

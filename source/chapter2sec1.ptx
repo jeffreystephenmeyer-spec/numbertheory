@@ -151,7 +151,7 @@
   </statement>
   <proof>
     <p>
-      Try a proof by cases for <m>a</m>.  If <m> 0\le a \le b </m> then we are done (why???).  So then assume <m> a&gt;b </m>.  Consider the descending chain 
+      Try a proof by cases for <m>a</m>.  If <m> 0\le a \le b </m> then we are done (why???).  So then assume <m> a&gt;b </m>.  Consider the descending sequence 
       
       <me> 
         S = \{a-bk \mid  k \in \Z \text{ and } a-bk &gt; 0 \}.
