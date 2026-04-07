@@ -71,6 +71,7 @@
   </proof>
 </proposition>
 
+<!--
 <proposition xml:id="proposition-divisibility_of_product">
   <title>Divisibility and multiplication</title>
   <statement>
@@ -84,6 +85,8 @@
     </p>
   </proof>
 </proposition>
+-->
+
 
 <definition xml:id="definition-linear_combination">
     <title>Linear Combination</title>
@@ -94,6 +97,10 @@
     </statement>
   </definition>
 
+<p>
+  We now prove one of the fundamental tools of number theory, the division algorithm.  We will use the division algorithm to prove some of the most important results in number theory, including the Euclidean Algorithm and the Fundamental Theorem of Arithmetic. 
+</p>
+
 <proposition xml:id="proposition-divisibility_of_linear_combination">
   <title>Divisibility and linear combinations</title>
   <statement>
@@ -103,7 +110,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> and <xref ref="definition-commutative_ring"/>useful.
     </p>
   </proof>
 </proposition>
@@ -144,14 +151,15 @@
   </statement>
   <proof>
     <p>
-      Try a proof by cases.  If <m> a \le b </m> then we are done (why???).  So then assume <m> a&gt;b </m>.  Consider the set 
+      Try a proof by cases for <m>a</m>.  If <m> 0\le a \le b </m> then we are done (why???).  So then assume <m> a&gt;b </m>.  Consider the descending chain 
       
       <me> 
-        S = \{a-bk \mid  k \in \Z \text{ and } a-bk &gt; 0 \}
+        S = \{a-bk \mid  k \in \Z \text{ and } a-bk &gt; 0 \}.
       </me>
 
-      The set <m>S</m> is nonempty (why???).  The set <m>S</m> has a minimal element (why???).  Call this minimal element <m>r</m>.  Show that this <m>r</m> has the desired properties.
-      You may find  <xref ref="definition-well-ordered"/> and  <xref ref="definition-well-ordered"/> useful.
+      The set <m>S</m> is nonempty (why???).  The set <m>S</m> has a minimal element (why???).  Call this minimal element <m>r</m>.  Show that this <m>r</m> has the desired properties.  Why must <m>0\le r &lt; b</m>?  Why must it be unique?
+      Lastly, do the case where <m>a&lt;0&lt;b</m>.  What can you say about <m>-a</m>?  How can you use the previous case to find the desired <m>q</m> and <m>r</m>? 
+      You may find  <xref ref="definition-ordered-ring"/>,  <xref ref="definition-well-ordered"/>, and <xref ref="proposition-inverse_flips_sign"/> useful.
     </p>
   </proof>
 </proposition>

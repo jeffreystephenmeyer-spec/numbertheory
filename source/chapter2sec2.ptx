@@ -61,15 +61,37 @@
         <mrow>r_{n-2}  \amp= r_{n-1} q_{n-1} + r_n \amp\amp\text{where } 0 \le r_n &lt; r_{n-1},</mrow>
         <mrow>r_{n-1}  \amp= r_n q_n. \amp\amp</mrow>
       </md>
-      Let <m>r_{n}</m> be the last nonzero remainder.  Then <m>\gcd(a,b) = r_n</m>. 
+      Let <m>r_{n}</m> be the last positive remainder.  Then <m>\gcd(a,b) = r_n</m>. 
     </p>
   </statement>
   <proof>
     <p>
-      Try a direct proof.  You may find  <xref ref="proposition-gcd_and_division_algorithm"/> useful.
+      Try a direct proof.  How do you know the process terminates?  Can you find a nonempty decreasing sequences of positive integers?  You may find  <xref ref="proposition-division_algorithm"/>, <xref ref="definition-well-ordered"/>, and  <xref ref="proposition-gcd_and_division_algorithm"/> useful.
     </p>
   </proof>
 </proposition>
+
+
+<p>
+  The Euclidean Algorithm is truly an amazing algorithm.  If you go and inspect your proof, you will see that you iterate the division algorithm no more than <m>2\log_2(b)+1</m> times!  This is a very efficient algorithm for computing the gcd of two integers.  Even though it is over two thousand years old, it is still state-of-the-art and has profound applications in number theory and beyond.
+</p>
+
+<!-- 
+<proposition xml:id="proposition-Euclidean_algorithm_terminates_in_logarithmic_time">
+  <title>The Euclidean Algorithm Terminates in Logarithmic Time</title>
+  <statement>
+    <p>
+      If <m>a</m> and <m>b</m> are positive integers where <m>a \ge b</m>, then the number of steps <m>n</m> in the Euclidean Algorithm is at most <m>2\log_2(b)+1</m>.   
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  You may find  You may find  <xref ref="proposition-division_algorithm"/> and <xref ref="proposition-euclidean_algorithm"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+-->
 
 <proposition xml:id="proposition-bezout_identity">
   <title>Bezout Identity</title>
@@ -80,9 +102,26 @@
   </statement>
   <proof>
     <p>
-      Try a constructive proof.  Use the Euclidean algorithm to find the gcd and then work backwards to find the coefficients.  You may find  <xref ref="proposition-euclidean_algorithm"/> useful.
+      Try a constructive direct proof.  Use the Euclidean Algorithm to find the gcd and then work backwards to find the coefficients.  You may find  <xref ref="proposition-euclidean_algorithm"/> useful.
     </p>
   </proof>
 </proposition>
+
+<p>
+  This proof strategy is called the <term>extended Euclidean algorithm</term>.  It is an efficient way to find the gcd of two integers and also find the coefficients in Bezout's identity.  We will use this algorithm throughout this book.
+</p>
+
+<p> 
+  While this may all seem very theoretical, it is also very concrete and gives explicit steps for computing the gcd and finding the coefficients in Bezout's identity.  These algorithms are used in many applications, including cryptography, coding theory, and computational number theory.  
+</p>
+
+<activity xml:id="activity-extended_euclidean_algorithm">
+  <title>Computing the GCD and Bezout Coefficients</title>
+  <statement>
+    <p>
+      Use the extended Euclidean algorithm to find integers <m>x</m> and <m>y</m> such that <m>13x + 8y = \gcd(13,8)</m>.
+    </p>
+  </statement>
+</activity>
 
 </section>

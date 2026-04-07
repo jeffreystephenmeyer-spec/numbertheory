@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter03" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Prime Numbers</title>
+
+  <introduction>
+    <p></p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="chapter3sec1.ptx" />
+  <xi:include href="chapter3sec2.ptx" />
+
+</chapter>

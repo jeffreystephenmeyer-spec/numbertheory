@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp2sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear Diophantine Equations</title>
+
+  <p> </p>
+
+  <definition xml:id="definition-linear_diophantine_equation">
+    <title>Linear Diophantine Equation</title>
+    <statement>
+        <p>
+            A <term>linear Diophantine equation</term> is an equation of the form <m>ax + by = c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are integers and the solutions <m>x</m> and <m>y</m> are required to be integers.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-solvability_of_linear_diophantine_equations">
+  <title>Solvability of Linear Diophantine Equations</title>
+  <statement>
+    <p>
+      Given integers <m>a</m> and <m>b</m>, the linear Diophantine equation <m>ax + by = c</m> has a solution if and only if <m>\gcd(a,b) \mid c</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  For the forward direction, assume that there is a solution <m>(x,y)</m> to the equation.  Show that <m>\gcd(a,b) \mid c</m>.  For the reverse direction, assume that <m>\gcd(a,b) \mid c</m>.  Show that there is a solution to the equation.  You may find  <xref ref="definition-divisibility"/>,   <xref ref="definition-gcd"/>, and <xref ref="proposition-divisibility_of_linear_combination"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+
+<proposition xml:id="proposition-solvability_of_linear_diophantine_equations_unit">
+  <title>Solvability of Linear Diophantine Equations (Unit Case)</title>
+  <statement>
+    <p>
+      Given integers <m>a</m> and <m>b</m>, the linear Diophantine equation <m>ax + by = 1</m> has a solution if and only if <m>\gcd(a,b) = 1</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  You may find <xref ref="proposition-solvability_of_linear_diophantine_equations"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+  <definition xml:id="definition-relatively_prime">
+    <title>Relatively Prime</title>
+    <statement>
+        <p>
+            Two integers <m>a</m> and <m>b</m> are <term>relatively prime</term> if <m>\gcd(a,b) = 1</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <proposition xml:id="proposition-dividing_to_get_relatively_prime">
+    <title>Dividing to Get Relatively Prime</title>
+    <statement>
+        <p>
+            If <m>a\in \Z</m> and <m>d = \gcd(a,b)</m>, then <m>a/d</m> and <m>b/d</m> are relatively prime.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Try a direct proof.  You may find  <xref ref="definition-divisibility"/>,   <xref ref="definition-gcd"/>, and <xref ref="proposition-divisibility_of_linear_combination"/> useful.
+        </p>
+    </proof>
+  </proposition>
+
+</section>

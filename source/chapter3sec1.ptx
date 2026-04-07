@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp3sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Prime Factorization</title>
+
+  <p> </p>
+
+  <definition xml:id="definition-prime_number">
+    <title>Prime Number</title>
+    <statement>
+        <p>
+            A <term>prime number</term> is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.
+        </p>
+    </statement>
+  </definition>
+
+
+<proposition xml:id="proposition-prime_factorization">
+  <title>Prime Factorization</title>
+  <statement>
+    <p>
+      Every positive integer greater than 1 can be expressed as a product of prime numbers.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon...
+    </p>
+  </proof>
+</proposition>
+
+
+
+</section>

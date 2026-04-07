@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp2sec4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Congruences</title>
+
+  <p> </p>
+
+  <definition xml:id="definition-congruence">
+    <title>Congruence</title>
+    <statement>
+        <p>
+            If  <m> a </m>  and <m> b </m> are integers and <m> m </m> is a positive integer, then <m> a </m>  and <m> b </m> are <term>congruent modulo</term> <m> m </m>, written <m> a \equiv b \pmod m</m>, if <m> m \mid (a-b)</m>.
+        </p>
+    </statement>
+  </definition>
+
+
+<proposition xml:id="proposition-congruence_cancellation_theorem">
+  <title>Cancellation Theorem for Congruences</title>
+  <statement>
+    <p>
+      If <m>a,b,\in \Z</m> are positive relatively prime integers and <m>x,y,\in \Z</m>, then <m>ax \equiv ay \pmod b</m> implies <m>x \equiv y \pmod b</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon...
+    </p>
+  </proof>
+</proposition>
+
+
+
+</section>

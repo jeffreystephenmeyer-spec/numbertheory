@@ -28,9 +28,9 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let <m>e</m> denote the minimal positive element of <m>R</m>.  (Why does <m>e</m> exist???) If <m>e=1</m>, we are done (why???).  Otherwise <m>0&lt; e &lt; 1</m>.  Look at the set 
+      Try a direct proof.  Let <m>e</m> denote the minimal positive element of <m>R</m>.  (Why does <m>e</m> exist???) If <m>e=1</m>, we are done (why???).  Otherwise <m>0&lt; e &lt; 1</m>.  Look at the descending chain 
       <me>
-        S = \{1-ke >0 \mid k \in \Z \}
+        S = \{1-ke \mid k \in \Z \text{ and } 1-ke &gt; 0 \}
       </me> 
       <m>S</m> is nonempty (why???).  There exists a minimal element <m>1-ne\in S</m>.  With minimality in mind, can <m>1-ne&gt; e</m>? Can <m>1-ne&lt; e</m>? Show  <m>1-ne=e</m> (why???).  Use this to find an element <m>m\in \Z</m> such that <m>me=1</m> (how???).  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-unit"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
     </p>
