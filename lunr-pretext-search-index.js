@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Linear Diophantine Equations",
-  "body": " Linear Diophantine Equations     Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions  and are required to be integers.     Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , , and useful.     Solvability of Linear Diophantine Equations (Unit Case)   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. You may find useful.     Relatively Prime   Two integers and are relatively prime if .     Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , , , , and useful.    Given a particular solution to a linear Diophantine equation, we can find all solutions.   The General Solution to a Linear Diophantine Equation   If are nonzero, , and are a particular solution to the equation , then all solutions are given by where runs through the integers and .    Try a direct proof. You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution. Start with (1). Suppose that is another solution. Then . Subtracting the original equation gives . This means . Since , we can write and for some integers and . Show that (why???). Deduce there exists an integer such that , and hence .  Now show (2). Let . Show that and is a solution. Analyze .  You may find , , , , , , and useful.     Computing the general solution to a Linear Diophantine Equation   Find the general solution to the linear Diophantine equation .    "
+  "body": " Linear Diophantine Equations     Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions  and are required to be integers.     Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , , and useful.     Solvability of Linear Diophantine Equations (Unit Case)   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. You may find useful.     Relatively Prime   Two integers and are relatively prime if .     Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , , , , and useful.    Given a particular solution to a linear Diophantine equation, we can find all solutions.   The General Solution to a Linear Diophantine Equation   If are nonzero, , and are a particular solution to the equation , then all solutions are given by where runs through the integers and .    Try a direct proof. You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution. Start with (1). Suppose that is another solution. Then . Subtracting the original equation gives . This means . Since , we can write and for some integers and . Show that (why???). Deduce there exists an integer such that , and hence .  Now show (2). Let . Show that and is a solution. Analyze .  You may find , , , , and useful.     Computing the general solution to a Linear Diophantine Equation   Find the general solution to the linear Diophantine equation .    "
 },
 {
   "id": "definition-linear_diophantine_equation",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.3.6",
   "title": "The General Solution to a Linear Diophantine Equation.",
-  "body": " The General Solution to a Linear Diophantine Equation   If are nonzero, , and are a particular solution to the equation , then all solutions are given by where runs through the integers and .    Try a direct proof. You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution. Start with (1). Suppose that is another solution. Then . Subtracting the original equation gives . This means . Since , we can write and for some integers and . Show that (why???). Deduce there exists an integer such that , and hence .  Now show (2). Let . Show that and is a solution. Analyze .  You may find , , , , , , and useful.   "
+  "body": " The General Solution to a Linear Diophantine Equation   If are nonzero, , and are a particular solution to the equation , then all solutions are given by where runs through the integers and .    Try a direct proof. You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution. Start with (1). Suppose that is another solution. Then . Subtracting the original equation gives . This means . Since , we can write and for some integers and . Show that (why???). Deduce there exists an integer such that , and hence .  Now show (2). Let . Show that and is a solution. Analyze .  You may find , , , , and useful.   "
 },
 {
   "id": "activity-general_solution_to_a_linear_diophantine_equation",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Congruences",
-  "body": " Congruences     Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .     Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Coming soon...    "
+  "body": " Congruences     Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .     Congruence is an Equivalence Relation   If where , then        If , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Congruence Preserves Operations   If where , then   If and , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find and useful.     Least Residue   If and are integers and is a positive integer, the unique from the division algorithm such that and is called the least residue of modula .     Congruence and Least Residue   If is positive, then two integers and are congruent modulo if and only if they have the same least residue modulo .    Coming soon...     Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Coming soon...    "
 },
 {
   "id": "definition-congruence",
@@ -604,11 +604,47 @@ var ptx_lunr_docs = [
   "body": " Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .   "
 },
 {
+  "id": "proposition-congruence_is_equivalence_relation",
+  "level": "2",
+  "url": "chp2sec4.html#proposition-congruence_is_equivalence_relation",
+  "type": "Proposition",
+  "number": "2.4.2",
+  "title": "Congruence is an Equivalence Relation.",
+  "body": " Congruence is an Equivalence Relation   If where , then        If , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
+},
+{
+  "id": "proposition-congruence_preserves_operations",
+  "level": "2",
+  "url": "chp2sec4.html#proposition-congruence_preserves_operations",
+  "type": "Proposition",
+  "number": "2.4.3",
+  "title": "Congruence Preserves Operations.",
+  "body": " Congruence Preserves Operations   If where , then   If and , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
+},
+{
+  "id": "definition-least_residue",
+  "level": "2",
+  "url": "chp2sec4.html#definition-least_residue",
+  "type": "Definition",
+  "number": "2.4.4",
+  "title": "Least Residue.",
+  "body": " Least Residue   If and are integers and is a positive integer, the unique from the division algorithm such that and is called the least residue of modula .   "
+},
+{
+  "id": "proposition-congruence_and_least_residue",
+  "level": "2",
+  "url": "chp2sec4.html#proposition-congruence_and_least_residue",
+  "type": "Proposition",
+  "number": "2.4.5",
+  "title": "Congruence and Least Residue.",
+  "body": " Congruence and Least Residue   If is positive, then two integers and are congruent modulo if and only if they have the same least residue modulo .    Coming soon...   "
+},
+{
   "id": "proposition-congruence_cancellation_theorem",
   "level": "2",
   "url": "chp2sec4.html#proposition-congruence_cancellation_theorem",
   "type": "Proposition",
-  "number": "2.4.2",
+  "number": "2.4.6",
   "title": "Cancellation Theorem for Congruences.",
   "body": " Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Coming soon...   "
 },
