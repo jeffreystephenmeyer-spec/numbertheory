@@ -9,7 +9,7 @@
     <title>Linear Diophantine Equation</title>
     <statement>
         <p>
-            A <term>linear Diophantine equation</term> is an equation of the form <m>ax + by = c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are integers and the solutions <m>x</m> and <m>y</m> are required to be integers.
+            A <term>linear Diophantine equation</term> is an equation of the form <m>ax + by = c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are integers and the <term>solutions</term> <m>x</m> and <m>y</m> are required to be integers.
         </p>
     </statement>
   </definition>
@@ -23,7 +23,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  For the forward direction, assume that there is a solution <m>(x,y)</m> to the equation.  Show that <m>\gcd(a,b) \mid c</m>.  For the reverse direction, assume that <m>\gcd(a,b) \mid c</m>.  Show that there is a solution to the equation.  You may find  <xref ref="definition-divisibility"/>,   <xref ref="definition-gcd"/>, and <xref ref="proposition-divisibility_of_linear_combination"/> useful.
+      Try a direct proof.  For the forward direction, assume that there is a solution <m>(x,y)</m> to the equation.  Show that <m>\gcd(a,b) \mid c</m>.  For the reverse direction, assume that <m>\gcd(a,b) \mid c</m>.  Show that there is a solution to the equation.  You may find  <xref ref="definition-divisibility"/>,   <xref ref="definition-gcd"/>, <xref ref="proposition-divisibility_of_linear_combination"/>, and <xref ref="proposition-bezout_identity"/> useful.
     </p>
   </proof>
 </proposition>
@@ -57,14 +57,50 @@
     <title>Dividing to Get Relatively Prime</title>
     <statement>
         <p>
-            If <m>a\in \Z</m> and <m>d = \gcd(a,b)</m>, then <m>a/d</m> and <m>b/d</m> are relatively prime.
+            If <m>a,b\in \Z</m> and <m>d = \gcd(a,b)</m>, then <m>a/d</m> and <m>b/d</m> are relatively prime.
         </p>
     </statement>
     <proof>
         <p>
-            Try a direct proof.  You may find  <xref ref="definition-divisibility"/>,   <xref ref="definition-gcd"/>, and <xref ref="proposition-divisibility_of_linear_combination"/> useful.
+            Try a direct proof.  You may find  <xref ref="definition-gcd"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>, <xref ref="definition-divisibility"/>,  <xref ref="definition-commutative_ring"/>, <xref ref="definition-relatively_prime"/>, and <xref ref="proposition-solvability_of_linear_diophantine_equations_unit"/> useful.
         </p>
     </proof>
   </proposition>
+
+  <p>
+    Given a particular solution to a linear Diophantine equation, we can find all solutions.
+  </p>
+
+
+  <proposition xml:id="proposition-the_general_solution_to_a_linear_diophantine_equation">
+    <title>The General Solution to a Linear Diophantine Equation</title>
+    <statement>
+        <p>
+            If <m>a,b\in \Z</m> are nonzero, <m>c\in \Z</m>, and <m>x_0,y_0\in \Z</m> are a particular solution to the equation <m>ax + by = c</m>, then all solutions are given by 
+            <md>x = x_0 + \left(\frac{b}{d}\right)t, \quad y = y_0 - \left(\frac{a}{d}\right)t</md>
+            where <m>t</m> runs through the integers and <m>d = \gcd(a,b)</m>.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Try a direct proof.  You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution.  Start with (1).  Suppose that <m>(x_1, y_1)</m> is another solution.  Then <m>ax_1 + by_1 = c</m>.  Subtracting the original equation <m>ax_0 + by_0 = c</m> gives <m>a(x_1 - x_0) + b(y_1 - y_0) = 0</m>.  This means <m>a(x_1 - x_0) = -b(y_1 - y_0)</m>.  Since <m>\gcd(a,b) = d</m>, we can write <m>a = da'</m> and <m>b = db'</m> for some integers <m>a'</m> and <m>b'</m>.  Show that <m>b' \mid (x_1 - x_0)</m> (why???).  Deduce there exists an integer <m>t</m> such that <m>x_1 - x_0 = tb'</m>, and hence <m>y_1 - y_0 = -ta'</m>.  
+        </p>
+        <p>
+            Now show (2).  Let <m>t\in \Z</m>.  Show that <m>x_1 = x_0 + \left(\frac{b}{d}\right)t</m> and <m>y = y_0 - \left(\frac{a}{d}\right)t</m> is a solution. Analyze <m>ax_1 + by_1</m>.
+        </p>
+        <p>
+            You may find  <xref ref="definition-linear_diophantine_equation"/>, <xref ref="definition-commutative_ring"/>, <xref ref="definition-relatively_prime"/>, <xref ref="definition-gcd"/>, <xref ref="definition-divisibility"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>,  and <xref ref="proposition-solvability_of_linear_diophantine_equations_unit"/> useful.
+        </p>
+    </proof>
+  </proposition>
+
+  <activity xml:id="activity-general_solution_to_a_linear_diophantine_equation">
+  <title>Computing the general solution to a Linear Diophantine Equation</title>
+  <statement>
+    <p>
+      Find the general solution to the linear Diophantine equation <m>5x+6y=100</m>.
+    </p>
+  </statement>
+</activity>
 
 </section>
