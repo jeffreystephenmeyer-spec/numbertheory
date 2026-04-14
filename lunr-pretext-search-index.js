@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Linear Diophantine Equations",
-  "body": " Linear Diophantine Equations     Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions and are required to be integers.     Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , and useful.     Solvability of Linear Diophantine Equations (Unit Case)   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. You may find useful.     Relatively Prime   Two integers and are relatively prime if .     Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , and useful.    "
+  "body": " Linear Diophantine Equations     Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions  and are required to be integers.     Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , , and useful.     Solvability of Linear Diophantine Equations (Unit Case)   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. You may find useful.     Relatively Prime   Two integers and are relatively prime if .     Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , , , , and useful.    Given a particular solution to a linear Diophantine equation, we can find all solutions.   The General Solution to a Linear Diophantine Equation   If are nonzero, , and are a particular solution to the equation , then all solutions are given by where runs through the integers and .    Try a direct proof. You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution. Start with (1). Suppose that is another solution. Then . Subtracting the original equation gives . This means . Since , we can write and for some integers and . Show that (why???). Deduce there exists an integer such that , and hence .  Now show (2). Let . Show that and is a solution. Analyze .  You may find , , , , , , and useful.     Computing the general solution to a Linear Diophantine Equation   Find the general solution to the linear Diophantine equation .    "
 },
 {
   "id": "definition-linear_diophantine_equation",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.3.1",
   "title": "Linear Diophantine Equation.",
-  "body": " Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions and are required to be integers.   "
+  "body": " Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions  and are required to be integers.   "
 },
 {
   "id": "proposition-solvability_of_linear_diophantine_equations",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.3.2",
   "title": "Solvability of Linear Diophantine Equations.",
-  "body": " Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , and useful.   "
+  "body": " Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , , and useful.   "
 },
 {
   "id": "proposition-solvability_of_linear_diophantine_equations_unit",
@@ -565,7 +565,25 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.3.5",
   "title": "Dividing to Get Relatively Prime.",
-  "body": " Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , and useful.   "
+  "body": " Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , , , , and useful.   "
+},
+{
+  "id": "proposition-the_general_solution_to_a_linear_diophantine_equation",
+  "level": "2",
+  "url": "chp2sec3.html#proposition-the_general_solution_to_a_linear_diophantine_equation",
+  "type": "Proposition",
+  "number": "2.3.6",
+  "title": "The General Solution to a Linear Diophantine Equation.",
+  "body": " The General Solution to a Linear Diophantine Equation   If are nonzero, , and are a particular solution to the equation , then all solutions are given by where runs through the integers and .    Try a direct proof. You must show two things: (1) that every solution has the form given, and (2) that every point of the given form is a solution. Start with (1). Suppose that is another solution. Then . Subtracting the original equation gives . This means . Since , we can write and for some integers and . Show that (why???). Deduce there exists an integer such that , and hence .  Now show (2). Let . Show that and is a solution. Analyze .  You may find , , , , , , and useful.   "
+},
+{
+  "id": "activity-general_solution_to_a_linear_diophantine_equation",
+  "level": "2",
+  "url": "chp2sec3.html#activity-general_solution_to_a_linear_diophantine_equation",
+  "type": "Activity",
+  "number": "2.3.1",
+  "title": "Computing the general solution to a Linear Diophantine Equation.",
+  "body": " Computing the general solution to a Linear Diophantine Equation   Find the general solution to the linear Diophantine equation .   "
 },
 {
   "id": "chp2sec4",
