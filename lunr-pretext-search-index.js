@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Congruences",
-  "body": " Congruences     Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .     Congruence is an Equivalence Relation   If where , then        If , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Congruence Preserves Operations   If where and and , then              If where , then   If and , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Least Residue   If and are integers and is a positive integer, the unique from the division algorithm such that and is called the least residue of modulo .     Congruence and Least Residue   If is positive, then two integers and are congruent modulo if and only if they have the same least residue modulo .    Try a direct proof. First suppose two integers and have the same least residue modulo . Write down the expressions and analyze. Why are they congruent modulo ? Next suppose the integers are congruent modulo and let be the least residue of one of them. Why must the other have the same least residue modulo ? You may find , , , and useful.     Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Try a direct proof. Try rewriting the congruence. What is congruent to? Why? You may find , , , , and useful.    "
+  "body": " Congruences     Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .     Congruence is an Equivalence Relation   If where , then        If , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , , and useful.     Congruence Preserves Operations   If where and and , then                Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Least Residue   If and are integers and is a positive integer, the unique from the division algorithm such that and is called the least residue of modulo .     Congruence and Least Residue   If is positive, then two integers and are congruent modulo if and only if they have the same least residue modulo .    Try a direct proof. First suppose two integers and have the same least residue modulo . Write down the expressions and analyze. Why are they congruent modulo ? Next suppose the integers are congruent modulo and let be the least residue of one of them. Why must the other have the same least residue modulo ? You may find , , , and useful.     Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Try a direct proof. Try rewriting the congruence. What is congruent to? Why? You may find , , , , and useful.    "
 },
 {
   "id": "definition-congruence",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.4.2",
   "title": "Congruence is an Equivalence Relation.",
-  "body": " Congruence is an Equivalence Relation   If where , then        If , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
+  "body": " Congruence is an Equivalence Relation   If where , then        If , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , , and useful.   "
 },
 {
   "id": "proposition-congruence_preserves_operations",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.4.3",
   "title": "Congruence Preserves Operations.",
-  "body": " Congruence Preserves Operations   If where and and , then              If where , then   If and , then .    If and , then .       Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
+  "body": " Congruence Preserves Operations   If where and and , then                Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
 },
 {
   "id": "definition-least_residue",
