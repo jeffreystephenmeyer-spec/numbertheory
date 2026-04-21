@@ -37,7 +37,7 @@
   <title>Proper divisors are smaller</title>
   <statement>
     <p>
-      If <m>a,b\in \Z</m> are distinct integers greater than 1 and <m>a \mid c </m>, then <m>a &lt; c</m>.
+      If <m>a,c\in \Z</m> are distinct integers greater than 1 and <m>a \mid c </m>, then <m>a &lt; c</m>.
     </p>
   </statement>
   <proof>
