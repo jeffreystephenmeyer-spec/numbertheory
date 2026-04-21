@@ -5,18 +5,48 @@
 
   <p> </p>
 
-  <definition xml:id="definition-prime_factorization">
-    <title>Prime Factorization</title>
-    <statement>
-        <p>
-            A <term>prime factorization</term> of a positive integer is an expression of the integer as a product of prime numbers.
-        </p>
-    </statement>
-  </definition>
+<proposition xml:id="proposition-euclid_lemma">
+  <title>Euclid's Lemma</title>
+  <statement>
+    <p>
+      If <m>p\in \Z</m> is prime and <m>p \mid bc</m> for some <m>b,c \in \Z</m>, then <m>p \mid b</m> or <m>p \mid c</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Suppose <m>p \nmid b</m>.  The <m>\gcd(p,b)=1</m> (why???).  Deduce that there exist integers <m>x,y\in \Z</m> such that <m>px+by=1</m>.  Use this to show that <m>p \mid c</m>.  You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, <xref ref="definition-divisibility"/>, <xref ref="proposition-bezout_identity"/> and <xref ref="proposition-divisibility_of_linear_combination"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+
+<p>
+  The property stated in Euclid's Lemma is not just a consequence of the definition of prime numbers; it is a deeper property that distinguishes prime numbers from composite numbers.  In fact, the converse of Euclid's Lemma is also true.
+</p>
+
+<proposition xml:id="proposition-euclid_converse">
+  <title>Euclid's Converse</title>
+  <statement>
+    <p>
+      If <m>a\in \Z</m> is a number greater than 1 with the property that whenever <m>a \mid bc</m> for some <m>b,c \in \Z</m>, then <m>a \mid b</m> or <m>a \mid c</m>, then <m>a</m> is prime.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Suppose <m>d \mid a</m>.  Then there exists a <m>q\in \Z</m> such that <m>a=dq</m>.  Either <m>a \mid d</m> or <m>a \mid q</m>. Analyze both cases and deduce that <m>d</m> must either be 1 or <m>a</m>.  You may find <xref ref="definition-divisibility"/>,  <xref ref="proposition-positive_numbers_dividing_each_other_are_equal"/>, and  <xref ref="definition-prime_number"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+<p>
+  Euclid's Lemma (<xref ref="proposition-euclid_lemma"/>)is a fundamental property of prime numbers that plays a crucial role in number theory, particularly in the proof of the uniqueness of prime factorization.
+</p>
 
 
 <proposition xml:id="proposition-uniqueness_of_prime_factorization">
-  <title>Uniqueness of Prime Factorization</title>
+  <title>Prime Factorization (Uniqueness)</title>
   <statement>
     <p>
       The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.
@@ -24,11 +54,29 @@
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Suppose that a positive integer <m>n</m> has two prime factorizations: 
+      <md>
+        <mrow>n \amp = p_1 p_2 \cdots p_k</mrow>
+        <mrow>n \amp = q_1 q_2 \cdots q_m
+      </mrow>
+      </md>
+      where <m>p_1, p_2, \ldots, p_k</m> and <m>q_1, q_2, \ldots, q_m</m> are prime numbers.  You want to show that <m>k=m</m> and that the sets of primes are the same (up to order).  Show that <m>p_1</m> must divide one of the <m>q_i</m>'s, up to relabelling <m>q_1</m>.  Deduce that <m>p_1 = q_1</m>.  We can then cancel <m>p_1</m> and <m>q_1</m> from both factorizations and repeat the argument to show that <m>p_2</m> must, up to relabelling, equal <m>q_2</m>, and so on.  You may find  <xref ref="definition-divisibility"/>, <xref ref="definition-prime_number"/>, <xref ref="proposition-euclid_lemma"/>, <xref ref="proposition-well_ordered_rings_have_cancellation"/> useful.
     </p>
   </proof>
 </proposition>
 
-
+<proposition xml:id="proposition-fundamental_theorem_of_arithmetic">
+  <title>Fundamental Theorem of Arithmetic</title>
+  <statement>
+    <p>
+      Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      You may find  <xref ref="proposition-prime_factorization_existence"/> and <xref ref="proposition-uniqueness_of_prime_factorization"/> useful.
+    </p>
+  </proof>
+</proposition>
 
 </section>

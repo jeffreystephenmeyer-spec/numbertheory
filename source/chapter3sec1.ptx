@@ -1,30 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="chp3sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Prime Factorization</title>
+  <title>Existence of Prime Factorization</title>
 
-  <p> </p>
+  <p>A prime number is one that is "irreducible" in the sense that it cannot be factored into smaller positive integers.</p>
 
   <definition xml:id="definition-prime_number">
     <title>Prime Number</title>
     <statement>
         <p>
-            A <term>prime number</term> is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.
+            A <term>prime number</term> is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.  In symbols, a positive integer <m>p</m> is prime if <m>p&gt;1</m> and for all positive integers <m>d</m>, if <m>d \mid p</m>, then <m>d=1</m> or <m>d=p</m>.
         </p>
     </statement>
   </definition>
 
 
-<proposition xml:id="proposition-prime_factorization">
-  <title>Prime Factorization</title>
+<proposition xml:id="proposition-minimal_divisor_is_prime">
+  <title>Minimal divisor is prime</title>
   <statement>
     <p>
-      Every positive integer greater than 1 can be expressed as a product of prime numbers.
+      If <m>n &gt; 1</m> is an integer, then the minimal divisor of <m>n</m> greater than 1 is a prime number.
     </p>
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Let <m>S</m> be the set of positive divisors of <m>n</m> that are greater than 1.  <m>S</m> is nonempty (why???) and <m>S</m> has a minimal element (why???), say <m>p</m>.  Try a proof by contradiction to show that <m>p</m> is prime.  Leverage minimality.  You may find <xref ref="definition-commutative_ring"/>, <xref ref="definition-divisibility"/>,  <xref ref="definition-well-ordered"/>,   <xref ref="definition-prime_number"/>, and  <xref ref="proposition-divisibility_is_transitive"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<p>
+  The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.
+</p>
+
+<proposition xml:id="proposition-product_of_integers_greater_than_one_increase_size">
+  <title>Product of integers greater than 1 increase size</title>
+  <statement>
+    <p>
+      If <m>a,b\in \Z</m> are integers greater than 1, then <m>0 &lt; a &lt; ab</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Show <m>0 \le b \le b+b=2b</m>. Then show <m>0 \le 2b \le 3b</m>.  Iterate.  Recall that <m>a = 1+1+\cdots + 1</m> <m>a</m>-many times.  Why can you rule out equality and get strict inequality?  You may find  <xref ref="definition-ordered-ring"/>, and <xref ref="proposition-well_ordered_rings_have_cancellation"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-proper_divisors_are_smaller">
+  <title>Proper divisors are smaller</title>
+  <statement>
+    <p>
+      If <m>a,b\in \Z</m> are distinct integers greater than 1 and <m>a \mid c </m>, then <m>a &lt; c</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/>, <xref ref="proposition-product_of_integers_greater_than_one_increase_size"/>, and <xref ref="proposition-division_algorithm"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+  <proposition xml:id="proposition-positive_numbers_dividing_each_other_are_equal">
+  <title>Two positive numbers that divide each other are equal</title>
+  <statement>
+    <p>
+      If <m>a,b\in \Z</m> are positive integers and both <m>a\mid b</m> and <m>b \mid a</m>, then <m>a=b</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let the definitions structure your proof.  Substitute some things and reason about what you see.  You may find  <xref ref="definition-divisibility"/>, <xref ref="proposition-only_positive_unit_is_one"/>, and <xref ref="proposition-well_ordered_rings_have_cancellation"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-infinite_primes">
+  <title>There are infinitely many prime numbers</title>
+  <statement>
+    <p>
+      There are infinitely many prime numbers.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contradiction.  There are many possible proofs of this result, but one of the most famous is attributed to Euclid.  Assume for the sake of contradiction that there are only finitely many prime numbers, say <m>p_1, p_2, \ldots, p_n</m>.  Consider the number <m>N = p_1 p_2 \cdots p_n + 1</m>.  This number is not divisible by any of the primes in our list (why???).  Deduce that there must exist a prime divisor of <m>N</m> that is not in our list.  You may find <xref ref="definition-prime_number"/>, <xref ref="definition-divisibility"/>, <xref ref="proposition-divisibility_of_linear_combination"/>, <xref ref="proposition-positive_numbers_dividing_each_other_are_equal"/>, and <xref ref="proposition-minimal_divisor_is_prime"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-prime_factorization_existence">
+  <title>Prime Factorization (Existence)</title>
+  <statement>
+    <p>
+      Every integer greater than 1 can be expressed as a product of prime numbers.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Let <m>X</m> be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers.  Try a proof by contradiction and assume <m>X</m> is nonempty.  Then <m>X</m> has a minimal element, say <m>n</m> (why???). <m>n</m> cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???).  Leverage minimality to deduce a contradiction.  You may find <xref ref="definition-well-ordered"/>, <xref ref="definition-prime_number"/>, <xref ref="definition-divisibility"/>, <xref ref="proposition-minimal_divisor_is_prime"/> and <xref ref="proposition-proper_divisors_are_smaller"/> useful.
     </p>
   </proof>
 </proposition>

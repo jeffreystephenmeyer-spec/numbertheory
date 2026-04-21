@@ -57,7 +57,7 @@
   Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid.  There are no element between 0 and 1!  
 </p>
 
-<proposition xml:id="prop-077">
+<proposition xml:id="proposition-only_positive_unit_is_one">
   <title>The only positive unit is 1</title>
   <statement>
     <p>
