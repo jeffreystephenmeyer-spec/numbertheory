@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The order of the integers",
-  "body": " The order of the integers  In addition to the algebraic structure of the integers, they also possess an ordering. This ordering is compatible with the algebraic operations and gives us a way to compare integers.   Order   A set has a total order if there is a binary relationship satisfying:  (O1)  ( Reflexivity .) If , then .   (O2)  ( Transitivity .) If satisfy and , then .   (O3)  ( Antisymmetry .) If satisfy and , then .   (O4)  ( Totality .) If , then either or .   If , where and , then we write . The expressions and are equivalent.    Observe the symbols , , , and will all be used in the usual ways.  A ring is an ordered ring if has a total order that is compatible with its operations as made precise in the following definition.   Ordered Ring   A ring is an ordered ring if has a total order satisfying:  (OR1)  ( Addition preserves order .) If and , then    (OR2)  ( Positive scaling preserves order .) If satisfy and , then        We call elements of an ordered ring positive if it is greater than zero and negative if it is less than zero.  We will establish some basic properties of ordered rings in the following propositions.   Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.     Multiplication by a positive unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , and useful.     A unit and its multiplicative inverse have the same sign   If is a ordered ring and is a unit, then and have the same sign.    Try a proof by contradiction. Then, without loss of generality, suppose is positive and is negative. So . Think about multipliying this inequality with a couple of known units. Can you find a contradiction? You may find , , , useful.     1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , , , useful.    "
+  "body": " The order of the integers  In addition to the algebraic structure of the integers, they also possess an ordering. This ordering is compatible with the algebraic operations and gives us a way to compare integers.   Order   A set has a total order if there is a binary relationship satisfying:  (O1)  ( Reflexivity .) If , then .   (O2)  ( Transitivity .) If satisfy and , then .   (O3)  ( Antisymmetry .) If satisfy and , then .   (O4)  ( Totality .) If , then either or .   If , where and , then we write . The expressions and are equivalent.    Observe the symbols , , , and will all be used in the usual ways.  A ring is an ordered ring if has a total order that is compatible with its operations as made precise in the following definition.   Ordered Ring   A ring is an ordered ring if has a total order satisfying:  (OR1)  ( Addition preserves order .) If and , then    (OR2)  ( Positive scaling preserves order .) If satisfy and , then        We call elements of an ordered ring positive if it is greater than zero and negative if it is less than zero.  We will establish some basic properties of ordered rings in the following propositions.   Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.     Multiplication by a positive unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , and useful.     A unit and its multiplicative inverse have the same sign   If is a ordered ring and is a unit, then and have the same sign.    Try a proof by contradiction. Then, without loss of generality, suppose is positive and is negative. So . Think about multipliying this inequality with a couple of known units. Can you find a contradiction? You may find , , , useful.     1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , , , useful.   \\ "
 },
 {
   "id": "def-definition-order",
@@ -343,9 +343,9 @@ var ptx_lunr_docs = [
   "body": " The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.   "
 },
 {
-  "id": "prop-077",
+  "id": "proposition-only_positive_unit_is_one",
   "level": "2",
-  "url": "chp1sec3.html#prop-077",
+  "url": "chp1sec3.html#proposition-only_positive_unit_is_one",
   "type": "Proposition",
   "number": "1.3.4",
   "title": "The only positive unit is 1.",
@@ -654,8 +654,8 @@ var ptx_lunr_docs = [
   "url": "chp3sec1.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Prime Factorization",
-  "body": " Prime Factorization     Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.     Prime Factorization   Every positive integer greater than 1 can be expressed as a product of prime numbers.    Coming soon...    "
+  "title": "Existence of Prime Factorization",
+  "body": " Existence of Prime Factorization  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , and useful.    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.    "
 },
 {
   "id": "definition-prime_number",
@@ -664,16 +664,61 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.1.1",
   "title": "Prime Number.",
-  "body": " Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.   "
+  "body": " Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .   "
 },
 {
-  "id": "proposition-prime_factorization",
+  "id": "proposition-minimal_divisor_is_prime",
   "level": "2",
-  "url": "chp3sec1.html#proposition-prime_factorization",
+  "url": "chp3sec1.html#proposition-minimal_divisor_is_prime",
   "type": "Proposition",
   "number": "3.1.2",
-  "title": "Prime Factorization.",
-  "body": " Prime Factorization   Every positive integer greater than 1 can be expressed as a product of prime numbers.    Coming soon...   "
+  "title": "Minimal divisor is prime.",
+  "body": " Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , and useful.   "
+},
+{
+  "id": "proposition-product_of_integers_greater_than_one_increase_size",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-product_of_integers_greater_than_one_increase_size",
+  "type": "Proposition",
+  "number": "3.1.3",
+  "title": "Product of integers greater than 1 increase size.",
+  "body": " Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.   "
+},
+{
+  "id": "proposition-proper_divisors_are_smaller",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-proper_divisors_are_smaller",
+  "type": "Proposition",
+  "number": "3.1.4",
+  "title": "Proper divisors are smaller.",
+  "body": " Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
+},
+{
+  "id": "proposition-positive_numbers_dividing_each_other_are_equal",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-positive_numbers_dividing_each_other_are_equal",
+  "type": "Proposition",
+  "number": "3.1.5",
+  "title": "Two positive numbers that divide each other are equal.",
+  "body": " Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.   "
+},
+{
+  "id": "proposition-infinite_primes",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-infinite_primes",
+  "type": "Proposition",
+  "number": "3.1.6",
+  "title": "There are infinitely many prime numbers.",
+  "body": " There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.   "
+},
+{
+  "id": "proposition-prime_factorization_existence",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-prime_factorization_existence",
+  "type": "Proposition",
+  "number": "3.1.7",
+  "title": "Prime Factorization (Existence).",
+  "body": " Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.   "
 },
 {
   "id": "chp3sec2",
@@ -682,25 +727,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Uniqueness of Prime Factorization",
-  "body": " Uniqueness of Prime Factorization     Prime Factorization   A prime factorization of a positive integer is an expression of the integer as a product of prime numbers.     Uniqueness of Prime Factorization   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Coming soon...    "
+  "body": " Uniqueness of Prime Factorization     Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.    The property stated in Euclid's Lemma is not just a consequence of the definition of prime numbers; it is a deeper property that distinguishes prime numbers from composite numbers. In fact, the converse of Euclid's Lemma is also true.   Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.    Euclid's Lemma ( )is a fundamental property of prime numbers that plays a crucial role in number theory, particularly in the proof of the uniqueness of prime factorization.   Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.     Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.    "
 },
 {
-  "id": "definition-prime_factorization",
+  "id": "proposition-euclid_lemma",
   "level": "2",
-  "url": "chp3sec2.html#definition-prime_factorization",
-  "type": "Definition",
+  "url": "chp3sec2.html#proposition-euclid_lemma",
+  "type": "Proposition",
   "number": "3.2.1",
-  "title": "Prime Factorization.",
-  "body": " Prime Factorization   A prime factorization of a positive integer is an expression of the integer as a product of prime numbers.   "
+  "title": "Euclid’s Lemma.",
+  "body": " Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.   "
+},
+{
+  "id": "proposition-euclid_converse",
+  "level": "2",
+  "url": "chp3sec2.html#proposition-euclid_converse",
+  "type": "Proposition",
+  "number": "3.2.2",
+  "title": "Euclid’s Converse.",
+  "body": " Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.   "
 },
 {
   "id": "proposition-uniqueness_of_prime_factorization",
   "level": "2",
   "url": "chp3sec2.html#proposition-uniqueness_of_prime_factorization",
   "type": "Proposition",
-  "number": "3.2.2",
-  "title": "Uniqueness of Prime Factorization.",
-  "body": " Uniqueness of Prime Factorization   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Coming soon...   "
+  "number": "3.2.3",
+  "title": "Prime Factorization (Uniqueness).",
+  "body": " Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.   "
+},
+{
+  "id": "proposition-fundamental_theorem_of_arithmetic",
+  "level": "2",
+  "url": "chp3sec2.html#proposition-fundamental_theorem_of_arithmetic",
+  "type": "Proposition",
+  "number": "3.2.4",
+  "title": "Fundamental Theorem of Arithmetic.",
+  "body": " Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.   "
 },
 {
   "id": "backmatter-2",
