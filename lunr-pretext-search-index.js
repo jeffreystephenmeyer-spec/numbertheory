@@ -654,8 +654,8 @@ var ptx_lunr_docs = [
   "url": "chp3sec1.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Existence of Prime Factorization",
-  "body": " Existence of Prime Factorization  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.    "
+  "title": "Primes",
+  "body": " Primes  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.    "
 },
 {
   "id": "definition-prime_number",
@@ -712,29 +712,29 @@ var ptx_lunr_docs = [
   "body": " There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.   "
 },
 {
-  "id": "proposition-prime_factorization_existence",
-  "level": "2",
-  "url": "chp3sec1.html#proposition-prime_factorization_existence",
-  "type": "Proposition",
-  "number": "3.1.7",
-  "title": "Prime Factorization (Existence).",
-  "body": " Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.   "
-},
-{
   "id": "chp3sec2",
   "level": "1",
   "url": "chp3sec2.html",
   "type": "Section",
   "number": "3.2",
-  "title": "Uniqueness of Prime Factorization",
-  "body": " Uniqueness of Prime Factorization     Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.    The property stated in Euclid's Lemma is not just a consequence of the definition of prime numbers; it is a deeper property that distinguishes prime numbers from composite numbers. In fact, the converse of Euclid's Lemma is also true.   Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.    Euclid's Lemma ( )is a fundamental property of prime numbers that plays a crucial role in number theory, particularly in the proof of the uniqueness of prime factorization.   Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.     Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.    "
+  "title": "Prime Factorization",
+  "body": " Prime Factorization     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.     Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.    The property stated in Euclid's Lemma is not just a consequence of the definition of prime numbers; it is a deeper property that distinguishes prime numbers from composite numbers. In fact, the converse of Euclid's Lemma is also true.   Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.    Euclid's Lemma ( )is a fundamental property of prime numbers that plays a crucial role in number theory, particularly in the proof of the uniqueness of prime factorization.   Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.     Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.    "
+},
+{
+  "id": "proposition-prime_factorization_existence",
+  "level": "2",
+  "url": "chp3sec2.html#proposition-prime_factorization_existence",
+  "type": "Proposition",
+  "number": "3.2.1",
+  "title": "Prime Factorization (Existence).",
+  "body": " Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.   "
 },
 {
   "id": "proposition-euclid_lemma",
   "level": "2",
   "url": "chp3sec2.html#proposition-euclid_lemma",
   "type": "Proposition",
-  "number": "3.2.1",
+  "number": "3.2.2",
   "title": "Euclid’s Lemma.",
   "body": " Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.   "
 },
@@ -743,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec2.html#proposition-euclid_converse",
   "type": "Proposition",
-  "number": "3.2.2",
+  "number": "3.2.3",
   "title": "Euclid’s Converse.",
   "body": " Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.   "
 },
@@ -752,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec2.html#proposition-uniqueness_of_prime_factorization",
   "type": "Proposition",
-  "number": "3.2.3",
+  "number": "3.2.4",
   "title": "Prime Factorization (Uniqueness).",
   "body": " Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.   "
 },
@@ -761,9 +761,108 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec2.html#proposition-fundamental_theorem_of_arithmetic",
   "type": "Proposition",
-  "number": "3.2.4",
+  "number": "3.2.5",
   "title": "Fundamental Theorem of Arithmetic.",
   "body": " Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.   "
+},
+{
+  "id": "chp3sec3",
+  "level": "1",
+  "url": "chp3sec3.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Euler Phi Function",
+  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , and useful.     Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. You may find , , and useful.     The phi function of a coprime product   If are coprime, then .    Try a direct proof. You may find , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Coming soon.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Coming soon.     Fermat's Little Theorem   If , is a prime, and , then .    Coming soon.    "
+},
+{
+  "id": "definition-units_modulo_n",
+  "level": "2",
+  "url": "chp3sec3.html#definition-units_modulo_n",
+  "type": "Definition",
+  "number": "3.3.1",
+  "title": "Units Modulo m.",
+  "body": " Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .   "
+},
+{
+  "id": "proposition-relatively_prime_elements_are_units_modulo_n",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-relatively_prime_elements_are_units_modulo_n",
+  "type": "Proposition",
+  "number": "3.3.2",
+  "title": "Relatively Prime Elements are Units Modulo m.",
+  "body": " Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , and useful.   "
+},
+{
+  "id": "definition-phi_function",
+  "level": "2",
+  "url": "chp3sec3.html#definition-phi_function",
+  "type": "Definition",
+  "number": "3.3.3",
+  "title": "Euler Phi Function.",
+  "body": " Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .   "
+},
+{
+  "id": "proposition-phi_function_of_prime",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-phi_function_of_prime",
+  "type": "Proposition",
+  "number": "3.3.4",
+  "title": "The phi function of a prime.",
+  "body": " The phi function of a prime   If is prime then .    Try a direct proof. You may find , , and useful.   "
+},
+{
+  "id": "proposition-phi_function_of_prime_power",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-phi_function_of_prime_power",
+  "type": "Proposition",
+  "number": "3.3.5",
+  "title": "The phi function of a prime power.",
+  "body": " The phi function of a prime power   If is prime and , then .    Try a direct proof. You may find , , and useful.   "
+},
+{
+  "id": "proposition-phi_function_of_coprime_product",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-phi_function_of_coprime_product",
+  "type": "Proposition",
+  "number": "3.3.6",
+  "title": "The phi function of a coprime product.",
+  "body": " The phi function of a coprime product   If are coprime, then .    Try a direct proof. You may find , , and useful.   "
+},
+{
+  "id": "proposition-computing_phi_function",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-computing_phi_function",
+  "type": "Proposition",
+  "number": "3.3.7",
+  "title": "Computing the Phi Function.",
+  "body": " Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.   "
+},
+{
+  "id": "proposition-multiplication_by_relatively_prime_element_permutes_the_units",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-multiplication_by_relatively_prime_element_permutes_the_units",
+  "type": "Proposition",
+  "number": "3.3.8",
+  "title": "Multiplication by relatively prime element permutes the units.",
+  "body": " Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Coming soon.   "
+},
+{
+  "id": "proposition-generalized_fermat_little_theorem",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-generalized_fermat_little_theorem",
+  "type": "Proposition",
+  "number": "3.3.9",
+  "title": "Generalized Fermat’s Little Theorem.",
+  "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Coming soon.   "
+},
+{
+  "id": "proposition-fermat_little_theorem",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-fermat_little_theorem",
+  "type": "Proposition",
+  "number": "3.3.10",
+  "title": "Fermat’s Little Theorem.",
+  "body": " Fermat's Little Theorem   If , is a prime, and , then .    Coming soon.   "
 },
 {
   "id": "backmatter-2",
