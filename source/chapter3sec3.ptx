@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp3sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Euler Phi Function</title>
+
+  <p> </p>
+  <definition xml:id="definition-units_modulo_n">
+    <title>Units Modulo m</title>
+    <statement>
+        <p>
+            The <term>units modulo m</term> are the least residues modulo <m>m</m> that have multiplicative inverses modulo <m>m</m>.  We will denote the set of units modulo <m>m</m> by <m>U_m</m>.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-relatively_prime_elements_are_units_modulo_n">
+  <title>Relatively Prime Elements are Units Modulo m</title>
+  <statement>
+    <p>
+      If <m>m &gt; 1</m> is an integer, and <m>a</m> is a least residue modulo <m>m</m> such that <m>\gcd(a,m)=1</m>, then <m>a \in U_m</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+  <definition xml:id="definition-phi_function">
+    <title>Euler Phi Function</title>
+    <statement>
+        <p>
+            The <term>Euler phi function</term> <m>\phi(m)</m> (also sometimes called the <term>totient function</term>) is defined as the number of positive integers less than or equal to <m>m</m> that are relatively prime to <m>m</m>.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-phi_function_of_prime">
+  <title>The phi function of a prime</title>
+  <statement>
+    <p>
+      If <m>p\in \Z</m> is prime then <m>\phi(p)=p-1</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+<proposition xml:id="proposition-phi_function_of_prime_power">
+  <title>The phi function of a prime power</title>
+  <statement>
+    <p>
+      If <m>p\in \Z</m> is prime and <m>k\in \Z_{>0}</m>, then <m>\phi(p^k)=p^k-p^{k-1}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-phi_function_of_coprime_product">
+  <title>The phi function of a coprime product</title>
+  <statement>
+    <p>
+      If <m>m,n\in \Z</m> are coprime, then <m>\phi(mn)=\phi(m)\phi(n)</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-computing_phi_function">
+  <title>Computing the Phi Function</title>
+  <statement>
+    <p>
+      If <m>m=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}</m> is the prime factorization of <m>m</m>, then
+      <m>
+        \phi(m) = m \left(1 - \frac{1}{p_1}\right)\left(1 - \frac{1}{p_2}\right) \cdots \left(1 - \frac{1}{p_r}\right).
+      </m>  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  
+    </p>
+  </proof>
+</proposition>
+
+
+
+
+<proposition xml:id="proposition-multiplication_by_relatively_prime_element_permutes_the_units">
+  <title>Multiplication by relatively prime element permutes the units</title>
+  <statement>
+    <p>
+      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then multiplication by <m>a</m> permutes the elements of <m>U_m</m>.  In other words, the function <m>f: U_m \to U_m</m> defined by <m>f(x) = ax \pmod m</m> is a bijection.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-generalized_fermat_little_theorem">
+  <title>Generalized Fermat's Little Theorem</title>
+  <statement>
+    <p>
+      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then <m>a^{\phi(m)} \equiv 1 \pmod{m}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-fermat_little_theorem">
+  <title>Fermat's Little Theorem</title>
+  <statement>
+    <p>
+      If <m>a, p \in \Z</m>, <m>p</m> is a prime, and <m>\gcd(a,p)=1</m>, then <m>a^{p-1} \equiv 1 \pmod{p}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+ 
+</section>

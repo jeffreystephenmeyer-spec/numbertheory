@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="chp3sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Uniqueness of Prime Factorization</title>
+  <title>Prime Factorization</title>
 
   <p> </p>
+
+<proposition xml:id="proposition-prime_factorization_existence">
+  <title>Prime Factorization (Existence)</title>
+  <statement>
+    <p>
+      Every integer greater than 1 can be expressed as a product of prime numbers.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Let <m>X</m> be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers.  Try a proof by contradiction and assume <m>X</m> is nonempty.  Then <m>X</m> has a minimal element, say <m>n</m> (why???). <m>n</m> cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???).  Leverage minimality to deduce a contradiction.  You may find <xref ref="definition-well-ordered"/>, <xref ref="definition-prime_number"/>, <xref ref="definition-divisibility"/>, <xref ref="proposition-minimal_divisor_is_prime"/> and <xref ref="proposition-proper_divisors_are_smaller"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
 
 <proposition xml:id="proposition-euclid_lemma">
   <title>Euclid's Lemma</title>
