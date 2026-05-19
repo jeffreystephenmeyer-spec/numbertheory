@@ -9,28 +9,40 @@
     <title>Quadratic Residues</title>
     <statement>
         <p>
-            Given an odd prime <m>p</m> and an integer <m>a</m> such that <m>\gcd(a,p) = 1</m>, we say that <m>a</m> is a <term>quadratic residue modulo <m>p</m></term> if there exists an integer <m>x</m> such that
+            If <m>p</m> is an odd prime and <m>a</m> relative prime to <m>p</m>, then <m>a</m> is a <term>quadratic residue modulo <m>p</m></term> if there exists an integer <m>x</m> such that
             <m>
                 x^2 \equiv a \pmod{p}
             </m>
-            In this case, we also say that <m>a</m> is a <term>square modulo <m>p</m></term>.
+            In this case, we also say that <m>a</m> is a <term>square modulo <m>p</m></term>.  Otherwise, <m>a</m> is a <term>quadratic non-residue modulo <m>p</m></term>.
         </p>
     </statement>
   </definition>
 
-  <definition xml:id="definition-legendre_symbol">
-    <title>Legendre Symbol</title>
-    <statement>
-        <p>
-            Given an odd prime <m>p</m> and an integer <m>a</m> such that <m>\gcd(a,p) = 1</m>, the <term>Legendre symbol</term> <m>\left(\frac{a}{p}\right)</m> is defined as
-            <m>
-                \left(\frac{a}{p}\right) = \begin{cases}
-                    1 \amp \text{if } a \text{ is a quadratic residue modulo } p \\
-                    -1 \amp \text{if } a \text{ is a quadratic non-residue modulo } p
-                \end{cases}
-            </m>
-        </p>
-    </statement>
-  </definition>
+  <proposition xml:id="proposition-negative_one_is_a_square_modulo_p_congruent_to_1_mod_4">
+  <title>Negative one is a square modulo <m>p</m> when <m>p \equiv 1 \pmod{4}</m></title>
+  <statement>
+    <p>
+      If <m>p</m> is an odd prime, then <m>-1</m> is a square modulo <m>p</m> if and only if <m>p \equiv 1 \pmod{4}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  First show the backward direction.  Then <m>p=4k+1</m> (why???).  Write <m>(p-1)!=(1 \cdot 2 \cdots (2k))\cdot((p-(2k)) \cdots (p-1))</m>.  Deduce <m>(p-1)! \equiv (2k)!^2 \pmod{p}</m>.  Now show the forward direction.  If <m>-1</m> is a square modulo <m>p</m>, then there exists an integer <m>x</m> such that <m>x^2 \equiv -1 \pmod{p}</m>.  Raise both sides to the power of <m>(p-1)/2</m>.  Show that <m>(-1)^{(p-1)/2} \equiv 1 \pmod{p}</m> and deduce that <m>4 \mid p-1</m>.
+      You may find  <xref ref="definition-congruence"/>, <xref ref="proposition-wilsons_theorem"/>, <xref ref="proposition-fermats_little_theorem"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+<sage>
+<input>
+for p in prime_range(1,100):
+  if p%4==1:
+    i = factorial((p-1)/2)%p
+    print(p,i,i^2%p-p)
+</input>
+<output>
+</output>
+</sage>
 
 </section>

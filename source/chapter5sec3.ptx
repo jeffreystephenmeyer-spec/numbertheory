@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp5sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quadratic Reciprocity</title>
+
+  <p> </p>
+  
+<proposition xml:id="proposition-quadratic_reciprocity">
+  <title>Quadratic Reciprocity</title>
+  <statement>
+    <p>
+      If <m>p</m> and <m>q</m> are distinct odd primes, then 
+      <md>
+        \legendre{p}{q}\legendre{q}{p} = (-1)^{((p-1)/2)((q-1)/2)}.
+      </md>
+      In other words, <m>\legendre{p}{q} = \legendre{q}{p}</m> if at least one of <m>p</m> and <m>q</m> is congruent to <m>1 \pmod{4}</m>, and <m>\legendre{p}{q} = -\legendre{q}{p}</m> if both <m>p</m> and <m>q</m> are congruent to <m>3 \pmod{4}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+</section>

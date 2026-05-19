@@ -57,7 +57,7 @@
   <title>Chinese Remainder Theorem (Simple Version)</title>
   <statement>
     <p>
-      If <m>m_1</m> and <m>m_2</m> are relatively prime positive integers and <m>a_1, a_2</m> are any integers, then the system of congruences
+      If <m>m_1</m> and <m>m_2</m> are relatively prime positive integers and <m>a_1, a_2</m> are integers, then the system of congruences
       <m>
         \begin{cases}
           x \equiv a_1 \pmod{m_1} \\

@@ -24,6 +24,7 @@
     \newcommand{\Z}{\mathbb Z} 
     \newcommand{\Q}{\mathbb Q} 
     \newcommand{\R}{\mathbb R} 
+    \newcommand{\legendre}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
     
     </macros>
 

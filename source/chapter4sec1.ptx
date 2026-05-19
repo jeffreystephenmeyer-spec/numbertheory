@@ -47,7 +47,7 @@ print(pow(a,e,m))
 </proposition>
 
 
-<proposition xml:id="proposition-fermat_little_theorem">
+<proposition xml:id="proposition-fermats_little_theorem">
   <title>Fermat's Little Theorem</title>
   <statement>
     <p>

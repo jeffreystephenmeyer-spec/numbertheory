@@ -1,29 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="chp5sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Quadratic Reciprocity</title>
+  <title>Legendre Symbol</title>
 
   <p> </p>
-  
-<proposition xml:id="proposition-quadratic_reciprocity">
-  <title>Quadratic Reciprocity</title>
-  <statement>
-    <p>
-      If <m>p</m> and <m>q</m> are distinct odd primes, then the congruences
-      <m>
-        \begin{cases}
-          x^2 \equiv a \pmod{p} \\
-          x^2 \equiv a \pmod{q}
-        \end{cases}
-      </m>
-      have the same solvability.  In other words, <m>a</m> is a quadratic residue modulo <m>p</m> if and only if it is a quadratic residue modulo <m>q</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Coming soon.
-    </p>
-  </proof>
-</proposition>
+
+  <definition xml:id="definition-legendre_symbol">
+    <title>Legendre Symbol</title>
+    <statement>
+        <p>
+            Given an odd prime <m>p</m> and an integer <m>a</m>, the <term>Legendre symbol</term> <m>\left(\frac{a}{p}\right)</m> is defined as
+            <m>
+                \legendre{a}{p} = \begin{cases}
+                    1 \amp \text{if } a \text{ is a quadratic residue modulo } p \\
+                    -1 \amp \text{if } a \text{ is a quadratic non-residue modulo } p\\
+                    0 \amp \text{if } a \equiv 0 \pmod{p}
+                \end{cases}
+            </m>
+        </p>
+    </statement>
+  </definition>
+
+<p>
+  For reasons we will not discuss here, Python quickly computes the Legendre symbol using the built in function <m>\texttt{kronecker(a,p)}</m>. 
+</p>
+
+<sage>
+<input>
+p = 11
+for a in range(p):
+  print(a, kronecker(a, p))
+</input>
+<output>
+</output>
+</sage>
+
+  <p> 
+    We now compute some decomposition results that will enable us to compute complicated Legendre symbols in terms of simpler ones.
+  </p>
+
+
+  <proposition xml:id="proposition-legendre_symbol_properties">
+    <title>Properties of the Legendre Symbol</title>
+    <statement>
+        <p>
+            If <m>p</m> is an odd prime and <m>a, b \in \Z</m>, then
+            <ol>
+              <li>
+                <p>
+                  <m>
+                      \left(\frac{a}{p}\right) = a^{(p-1)/2} \pmod{p}
+                  </m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>
+                        \legendre{ab}{p} = \legendre{a}{p}\legendre{b}{p}
+                  </m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>a \equiv b \pmod{p}</m>, then <m>\legendre{a}{p} = \legendre{b}{p}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>\gcd(a,p) =  1</m>, then <m>\legendre{a^2b}{p} = \legendre{b}{p}</m>.
+                </p>
+              </li>
+            </ol>
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+        </p>
+    </proof>
+  </proposition>
+
+  <p> 
+    We now compute the Legendre symbol for some special cases. In particular, a few simple values of <m>a</m> as we range across <m>p</m>.
+  </p>
+
+   <proposition xml:id="proposition-legendre_symbol_for_one">
+    <title>The Legendre Symbol for <m>1</m></title>
+    <statement>
+        <p>
+            If <m>p</m> is an odd prime, then <m>\legendre{1}{p}=1</m>.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+        </p>
+    </proof>
+  </proposition>
+
+   <proposition xml:id="proposition-legendre_symbol_for_neg_one">
+    <title>The Legendre Symbol for <m>-1</m></title>
+    <statement>
+        <p>
+            If <m>p</m> is an odd prime, then <m>\legendre{-1}{p} = (-1)^{(p-1)/2}</m>.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+        </p>
+    </proof>
+  </proposition>
+
+     <proposition xml:id="proposition-legendre_symbol_for_two">
+    <title>The Legendre Symbol for <m>2</m></title>
+    <statement>
+        <p>
+            If <m>p</m> is an odd prime, then <m>\legendre{2}{p} = (-1)^{(p^2-1)/8}</m>.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+        </p>
+    </proof>
+  </proposition>
+
+<sage>
+<input>
+a = 1
+for p in prime_range(100):
+  print(p, kronecker(a, p))
+</input>
+<output>
+</output>
+</sage>
+
 
 </section>
