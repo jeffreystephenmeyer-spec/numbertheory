@@ -69,7 +69,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  First show existence, then uniqueness.  There exists integers <m>s_1, s_2</m>such that <m> m_1s_1 + m_2s_2 = a_1-a_2</m> (why???).  Show <m>x = a_1 - m_2s_2</m> is a solution to the system of congruences.  Now show that there is a unique solution modulo <m>M</m>.  Suppose that <m>x_1</m> and <m>x_2</m> are two solutions.  Then <m>x_1 \equiv x_2 \pmod{m_1}</m> and <m>x_1 \equiv x_2 \pmod{m_2}</m>.  Show that this implies <m>x_1 \equiv x_2 \pmod{mn}</m>.   You may find  <xref ref="definition-relatively_prime"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>, <xref ref="definition-congruence"/>,  <xref ref="proposition-relatively_prime_product_divides"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
+      Try a direct proof.  First show existence, then uniqueness.  There exists integers <m>s_1, s_2</m>such that <m> m_1s_1 + m_2s_2 = a_1-a_2</m> (why???).  Show <m>x = a_1 - m_1s_1</m> is a solution to the system of congruences.  Now show that there is a unique solution modulo <m>M</m>.  Suppose that <m>x_1</m> and <m>x_2</m> are two solutions.  Then <m>x_1 \equiv x_2 \pmod{m_1}</m> and <m>x_1 \equiv x_2 \pmod{m_2}</m>.  Show that this implies <m>x_1 \equiv x_2 \pmod{mn}</m>.   You may find  <xref ref="definition-relatively_prime"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>, <xref ref="definition-congruence"/>,  <xref ref="proposition-relatively_prime_product_divides"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
     </p>
   </proof>
 </proposition>
