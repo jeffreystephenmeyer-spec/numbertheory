@@ -946,9 +946,9 @@ var ptx_lunr_docs = [
   "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why? Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.   "
 },
 {
-  "id": "proposition-fermat_little_theorem",
+  "id": "proposition-fermats_little_theorem",
   "level": "2",
-  "url": "chp4sec1.html#proposition-fermat_little_theorem",
+  "url": "chp4sec1.html#proposition-fermats_little_theorem",
   "type": "Proposition",
   "number": "4.1.3",
   "title": "Fermat’s Little Theorem.",
@@ -1060,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Chinese Remainder Theorem",
-  "body": " Chinese Remainder Theorem  Imagine you are an ancient astronomer tasked with synchronizing the heavens. You are tracking two major cycles that govern the seasons and the tides:    The Solar Cycle: The sun returns to its winter solstice position every 365 days.     The Lunar Cycle: The moon returns to its \"New Moon\" phase every 29 days.   As you record your observations this year, you notice a discrepancy: the Winter Solstice has just occurred, but the New Moon is not for another 11 days. You wish to know how far back in time one must travel to find the theoretical \"Year Zero\" — the legendary day when the Winter Solstice and the New Moon happened at the exact same moment. If we let be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: (The sun has completed its cycles perfectly) (The moon is 11 days short of completing its next cycle)  This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences. In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon. Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem.   System of Congruences   Given , , a system of congruences is a set of congruence equations. In symbols, a system of congruences looks is:   A solution to a system of congruences is an integer that satisfies all the congruences simultaneously.    As is often the case, we will want to understand if a solution exists, and if so, how many solutions there are.   Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are any integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.    Observe that the proof is constructive . It gives us a method for explicitly finding the solution.   Pairwise Relatively Prime   Given integers , we say they are pairwise relatively prime if for all .     Iterative Criterion for Pairwise Relatively Prime Integers   If are positive integers, then they are pairwise relatively prime if and only if and are relatively prime, and and are relatively prime    Try a direct proof. First show the forward direction. If are pairwise relatively prime, then and . Show that this implies . Now show the backward direction. If and are relatively prime, and and are relatively prime, then show that and . You may find , , and useful.     Chinese Remainder Theorem (General Version)   If , are pairwise relatively prime, then the system of congruences has a unique solution modulo .    Try a direct proof. Iterate the simple version of the Chinese Remainder Theorem. You may find , , useful.      Systems of Congruences   Solve each of the following systems of congruences.                    "
+  "body": " Chinese Remainder Theorem  Imagine you are an ancient astronomer tasked with synchronizing the heavens. You are tracking two major cycles that govern the seasons and the tides:    The Solar Cycle: The sun returns to its winter solstice position every 365 days.     The Lunar Cycle: The moon returns to its \"New Moon\" phase every 29 days.   As you record your observations this year, you notice a discrepancy: the Winter Solstice has just occurred, but the New Moon is not for another 11 days. You wish to know how far back in time one must travel to find the theoretical \"Year Zero\" — the legendary day when the Winter Solstice and the New Moon happened at the exact same moment. If we let be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: (The sun has completed its cycles perfectly) (The moon is 11 days short of completing its next cycle)  This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences. In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon. Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem.   System of Congruences   Given , , a system of congruences is a set of congruence equations. In symbols, a system of congruences looks is:   A solution to a system of congruences is an integer that satisfies all the congruences simultaneously.    As is often the case, we will want to understand if a solution exists, and if so, how many solutions there are.   Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.    Observe that the proof is constructive . It gives us a method for explicitly finding the solution.   Pairwise Relatively Prime   Given integers , we say they are pairwise relatively prime if for all .     Iterative Criterion for Pairwise Relatively Prime Integers   If are positive integers, then they are pairwise relatively prime if and only if and are relatively prime, and and are relatively prime    Try a direct proof. First show the forward direction. If are pairwise relatively prime, then and . Show that this implies . Now show the backward direction. If and are relatively prime, and and are relatively prime, then show that and . You may find , , and useful.     Chinese Remainder Theorem (General Version)   If , are pairwise relatively prime, then the system of congruences has a unique solution modulo .    Try a direct proof. Iterate the simple version of the Chinese Remainder Theorem. You may find , , useful.      Systems of Congruences   Solve each of the following systems of congruences.                    "
 },
 {
   "id": "definition-system_of_congruences",
@@ -1078,7 +1078,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.4.2",
   "title": "Chinese Remainder Theorem (Simple Version).",
-  "body": " Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are any integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.   "
+  "body": " Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.   "
 },
 {
   "id": "definition-pairwise_relatively_prime",
@@ -1141,7 +1141,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Quadratic Residues",
-  "body": " Quadratic Residues     Quadratic Residues   Given an odd prime and an integer such that , we say that is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo .     Legendre Symbol   Given an odd prime and an integer such that , the Legendre symbol  is defined as     "
+  "body": " Quadratic Residues     Quadratic Residues   If is an odd prime and relative prime to , then is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo . Otherwise, is a quadratic non-residue modulo .     Negative one is a square modulo when   If is an odd prime, then is a square modulo if and only if .    Try a direct proof. First show the backward direction. Then (why???). Write . Deduce . Now show the forward direction. If is a square modulo , then there exists an integer such that . Raise both sides to the power of . Show that and deduce that . You may find , , useful.     "
 },
 {
   "id": "definition-quadratic_residues",
@@ -1150,16 +1150,88 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "5.1.1",
   "title": "Quadratic Residues.",
-  "body": " Quadratic Residues   Given an odd prime and an integer such that , we say that is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo .   "
+  "body": " Quadratic Residues   If is an odd prime and relative prime to , then is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo . Otherwise, is a quadratic non-residue modulo .   "
+},
+{
+  "id": "proposition-negative_one_is_a_square_modulo_p_congruent_to_1_mod_4",
+  "level": "2",
+  "url": "chp5sec1.html#proposition-negative_one_is_a_square_modulo_p_congruent_to_1_mod_4",
+  "type": "Proposition",
+  "number": "5.1.2",
+  "title": "Negative one is a square modulo <span class=\"process-math\">\\(p\\)<\/span> when <span class=\"process-math\">\\(p \\equiv 1 \\pmod{4}\\)<\/span>.",
+  "body": " Negative one is a square modulo when   If is an odd prime, then is a square modulo if and only if .    Try a direct proof. First show the backward direction. Then (why???). Write . Deduce . Now show the forward direction. If is a square modulo , then there exists an integer such that . Raise both sides to the power of . Show that and deduce that . You may find , , useful.   "
+},
+{
+  "id": "chp5sec2",
+  "level": "1",
+  "url": "chp5sec2.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Legendre Symbol",
+  "body": " Legendre Symbol     Legendre Symbol   Given an odd prime and an integer , the Legendre symbol  is defined as     For reasons we will not discuss here, Python quickly computes the Legendre symbol using the built in function .   We now compute some decomposition results that will enable us to compute complicated Legendre symbols in terms of simpler ones.   Properties of the Legendre Symbol   If is an odd prime and , then             If , then .    If , then .       Try a direct proof. Let the definitions structure your proofs. You may find useful.    We now compute the Legendre symbol for some special cases. In particular, a few simple values of as we range across .   The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.     The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.     The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.     "
 },
 {
   "id": "definition-legendre_symbol",
   "level": "2",
-  "url": "chp5sec1.html#definition-legendre_symbol",
+  "url": "chp5sec2.html#definition-legendre_symbol",
   "type": "Definition",
-  "number": "5.1.2",
+  "number": "5.2.1",
   "title": "Legendre Symbol.",
-  "body": " Legendre Symbol   Given an odd prime and an integer such that , the Legendre symbol  is defined as    "
+  "body": " Legendre Symbol   Given an odd prime and an integer , the Legendre symbol  is defined as    "
+},
+{
+  "id": "proposition-legendre_symbol_properties",
+  "level": "2",
+  "url": "chp5sec2.html#proposition-legendre_symbol_properties",
+  "type": "Proposition",
+  "number": "5.2.2",
+  "title": "Properties of the Legendre Symbol.",
+  "body": " Properties of the Legendre Symbol   If is an odd prime and , then             If , then .    If , then .       Try a direct proof. Let the definitions structure your proofs. You may find useful.   "
+},
+{
+  "id": "proposition-legendre_symbol_for_one",
+  "level": "2",
+  "url": "chp5sec2.html#proposition-legendre_symbol_for_one",
+  "type": "Proposition",
+  "number": "5.2.3",
+  "title": "The Legendre Symbol for <span class=\"process-math\">\\(1\\)<\/span>.",
+  "body": " The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.   "
+},
+{
+  "id": "proposition-legendre_symbol_for_neg_one",
+  "level": "2",
+  "url": "chp5sec2.html#proposition-legendre_symbol_for_neg_one",
+  "type": "Proposition",
+  "number": "5.2.4",
+  "title": "The Legendre Symbol for <span class=\"process-math\">\\(-1\\)<\/span>.",
+  "body": " The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.   "
+},
+{
+  "id": "proposition-legendre_symbol_for_two",
+  "level": "2",
+  "url": "chp5sec2.html#proposition-legendre_symbol_for_two",
+  "type": "Proposition",
+  "number": "5.2.5",
+  "title": "The Legendre Symbol for <span class=\"process-math\">\\(2\\)<\/span>.",
+  "body": " The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.   "
+},
+{
+  "id": "chp5sec3",
+  "level": "1",
+  "url": "chp5sec3.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "Quadratic Reciprocity",
+  "body": " Quadratic Reciprocity     Quadratic Reciprocity   If and are distinct odd primes, then In other words, if at least one of and is congruent to , and if both and are congruent to .    Coming soon.    "
+},
+{
+  "id": "proposition-quadratic_reciprocity",
+  "level": "2",
+  "url": "chp5sec3.html#proposition-quadratic_reciprocity",
+  "type": "Proposition",
+  "number": "5.3.1",
+  "title": "Quadratic Reciprocity.",
+  "body": " Quadratic Reciprocity   If and are distinct odd primes, then In other words, if at least one of and is congruent to , and if both and are congruent to .    Coming soon.   "
 },
 {
   "id": "backmatter-2",
