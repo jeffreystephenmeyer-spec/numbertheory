@@ -130,9 +130,16 @@
     <title>Systems of Congruences</title>
     <introduction>
       <p>
-        Solve each of the following systems of congruences. 
+        Solve each of the following systems of congruences. For your convenience, here is a Sage cell for some computations.
       </p>
     </introduction>
+
+    <sage>
+<input>
+</input>
+<output>
+</output>
+</sage>
 
     <exercise>
       <p>
