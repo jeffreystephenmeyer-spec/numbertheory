@@ -39,7 +39,7 @@
 
 <sage>
 <input>
-for p in prime_range(1,100):
+for p in prime_range(3,100):
   if p%4==1:
     i = factorial((p-1)/2)%p
     print(p,i,i^2%p-p)
@@ -63,6 +63,20 @@ for p in prime_range(1,100):
     </p>
   </proof>
 </proposition>
+
+<sage>
+<input>
+  a = 2
+  for p in prime_range(3,50):
+    x = pow(a, (p-1)//2, p)
+    print(p,x)
+</input>
+<output>
+</output>
+</sage>
+
+<p>  For what primes is 2 a quadratic residue?  Do you see a pattern?  The following two technical definitions and proposition will sets us up to prove Gauss's Lemma, a useful result for determining when numbers are quadratic residues.  We will then use Gauss's Lemma to determine the primes for which 2 is a quadratic residue.  
+</p> 
 
   <definition xml:id="definition-centering_map">
     <title>Centering Map</title>
@@ -118,7 +132,7 @@ for p in prime_range(1,100):
   <title>Two is a quadratic residue modulo <m>p</m> when <m>p \equiv \pm 1 \pmod{8}</m></title>
   <statement>
     <p>
-      If <m>p</m> is an odd prime, then <m>2</m> is a quadratic residue modulo <m>p</m> if and only if <m>p \equiv 1,7 \pmod{8}</m>.
+      If <m>p</m> is an odd prime, then <m>2</m> is a quadratic residue modulo <m>p</m> if and only if <m>p \equiv \pm 1 \pmod{8}</m>.
     </p>
   </statement>
   <proof>
