@@ -18,20 +18,23 @@
     </statement>
   </definition>
 
-  <proposition xml:id="proposition-negative_one_is_a_square_modulo_p_congruent_to_1_mod_4">
-  <title>Negative one is a square modulo <m>p</m> when <m>p \equiv 1 \pmod{4}</m></title>
+  <proposition xml:id="proposition-negative_one_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4">
+  <title>Negative one is a quadratic residue modulo <m>p</m> when <m>p \equiv 1 \pmod{4}</m></title>
   <statement>
     <p>
-      If <m>p</m> is an odd prime, then <m>-1</m> is a square modulo <m>p</m> if and only if <m>p \equiv 1 \pmod{4}</m>.
+      If <m>p</m> is an odd prime, then <m>-1</m> is a quadratic residue modulo <m>p</m> if and only if <m>p \equiv 1 \pmod{4}</m>.
     </p>
   </statement>
   <proof>
     <p>
-      Try a direct proof.  First show the backward direction.  Then <m>p=4k+1</m> (why???).  Write <m>(p-1)!=(1 \cdot 2 \cdots (2k))\cdot((p-(2k)) \cdots (p-1))</m>.  Deduce <m>(p-1)! \equiv (2k)!^2 \pmod{p}</m>.  Now show the forward direction.  If <m>-1</m> is a square modulo <m>p</m>, then there exists an integer <m>x</m> such that <m>x^2 \equiv -1 \pmod{p}</m>.  Raise both sides to the power of <m>(p-1)/2</m>.  Show that <m>(-1)^{(p-1)/2} \equiv 1 \pmod{p}</m> and deduce that <m>4 \mid p-1</m>.
-      You may find  <xref ref="definition-congruence"/>, <xref ref="proposition-wilsons_theorem"/>, <xref ref="proposition-fermats_little_theorem"/> useful.
+      Try a direct proof.  First show the backward direction.  Then <m>p=4k+1</m> (why???).  Write <m>(p-1)!=(1 \cdot 2 \cdots (2k))\cdot((p-(2k)) \cdots (p-1))</m>.  Deduce <m>(p-1)! \equiv (2k)!^2 \pmod{p}</m>.  Now show the forward direction.  If <m>-1</m> is a quadratic residue modulo <m>p</m>, then there exists an integer <m>x</m> such that <m>x^2 \equiv -1 \pmod{p}</m>.  Raise both sides to the power of <m>(p-1)/2</m>.  Show that <m>(-1)^{(p-1)/2} \equiv 1 \pmod{p}</m> and deduce that <m>4 \mid p-1</m>.
+      You may find  <xref ref="definition-quadratic_residues"/>, <xref ref="definition-congruence"/>, <xref ref="proposition-wilsons_theorem"/>, <xref ref="proposition-fermats_little_theorem"/>, and <xref ref="proposition-congruence_preserves_operations"/> useful.
     </p>
   </proof>
 </proposition>
+
+
+
 
 
 <sage>
@@ -45,4 +48,85 @@ for p in prime_range(1,100):
 </output>
 </sage>
 
+
+  <proposition xml:id="proposition-eulers_criterion">
+  <title>Euler's Criterion</title>
+  <statement>
+    <p>
+      If <m>p</m> is an odd prime and <m>\gcd(a,p)=1</m>, then <m>a</m> is a quadratic residue modulo <m>p</m> if and only if <m>a^{(p-1)/2} \equiv 1 \pmod{p}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      First show the forward direction.  Try a direct proof.  Suppose <m>a</m> is a quadratic residue modulo <m>p</m>.  Then there exists an integer <m>x</m> such that <m>x^2 \equiv a \pmod{p}</m>.  Raise both sides to the power of <m>(p-1)/2</m> and interpret.  Now show the backward direction.  Try a proof by contrapositive.  Suppose <m>a</m> is not a quadratic residue modulo <m>p</m>.  For each nonzero least residue mod <m>p</m>, <m>r</m>, there exists a unique and distinct least residue <m>r'</m> such that <m>rr' \equiv a \pmod{p}</m> (why???).  Using these pairs, compute the factorial <m>(p-1)!</m> in two ways.
+      You may find  <xref ref="definition-quadratic_residues"/>, <xref ref="definition-congruence"/>, <xref ref="proposition-fermats_little_theorem"/>, <xref ref="proposition-congruence_preserves_operations"/>, <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/>, and <xref ref="proposition-wilsons_theorem"/>useful.
+    </p>
+  </proof>
+</proposition>
+
+  <definition xml:id="definition-centering_map">
+    <title>Centering Map</title>
+    <statement>
+        <p>
+            Fix an odd prime <m>p</m> and an integer <m>a</m> relatively prime to <m>p</m>. Let <m>0&lt;r\le \frac{p-1}{2}</m> be a least residue modulo <m>p</m>.  Let <m>r_a</m> denote the least residue of <m>ar</m> modulo <m>p</m>.  Either <m>r_a\le \frac{p-1}{2}</m> or it is not.  If it is not, then <m>p-r_a</m> is a least residue less than or equal to <m>\frac{p-1}{2}</m> (why???).  We define the <term>centering map</term> modulo <m>p</m> to be the self-map <m>C_a:\{1, 2, \ldots, \frac{p-1}{2}\} \to \{1, 2, \ldots, \frac{p-1}{2}\}</m> defined by 
+            <md>C_a(r) = \begin{cases} r_a \amp \text{if } r_a \leq \frac{p-1}{2} \\ p - r_a \amp \text{if } r_a &gt; \frac{p-1}{2} \end{cases}.</md>
+        </p>
+    </statement>
+  </definition>
+
+  <proposition xml:id="proposition-centering_map_is_bijection">
+  <title>Centering Map is a Bijection</title>
+  <statement>
+    <p>
+      The centering map <m>C_a</m> is a bijection.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      First show this map is one-to-one and then deduce it is onto.  Suppose <m>r_1</m> and <m>r_2</m> are least resides modulo <m>p</m> such that <m>C_a(r_1) = C_a(r_2)</m>.  Show by three cases that <m>r_1 = r_2</m>.
+      You may find  <xref ref="definition-centering_map"/>, <xref ref="proposition-congruence_and_least_residue"/>, <xref ref="proposition-congruence_cancellation_theorem"/>, <xref ref="proposition-congruence_preserves_operations"/>, and <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<definition xml:id="definition-flip_function">
+  <title>Flip count</title>
+  <statement>
+      <p>
+          If <m>p</m> is an odd prime and <m>a</m> relatively prime to <m>p</m>, then define <m>\beta(a,p)</m> to be the number of elements in the set <m>\{ar \mod p \mid r = 1, 2, \ldots, \frac{p-1}{2}\}</m> that are greater than <m>\frac{p-1}{2}</m>.  We will say <m>\beta(a,p)</m> is the <term>flip count</term> of <m>a</m> modulo <m>p</m>.
+      </p>
+  </statement>
+</definition>
+
+<proposition xml:id="proposition-gauss_lemma">
+  <title>Gauss's Lemma</title>
+  <statement>
+    <p>
+      If <m>p</m> is an odd prime and <m>\gcd(a,p)=1</m>, then <m>a</m> is a quadratic residue modulo <m>p</m> if and only if <m>\beta(a,p)</m> is even.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Compute the product modulo <m>p</m> of all elements in the set <m>\{ar \mod p \mid r = 1, 2, \ldots, \frac{p-1}{2}\}</m> in two ways.  Show <m>(-1)^{\beta(a,p)}=a^{(p-1)/2}</m>.
+      You may find  <xref ref="definition-quadratic_residues"/>, <xref ref="definition-congruence"/>, <xref ref="definition-flip_function"/>, <xref ref="proposition-eulers_criterion"/>, <xref ref="proposition-congruence_preserves_operations"/>, <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/>, and <xref ref="proposition-congruence_cancellation_theorem"/>useful.
+    </p>
+  </proof>
+</proposition>
+
+
+  <proposition xml:id="proposition-two_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4">
+  <title>Two is a quadratic residue modulo <m>p</m> when <m>p \equiv \pm 1 \pmod{8}</m></title>
+  <statement>
+    <p>
+      If <m>p</m> is an odd prime, then <m>2</m> is a quadratic residue modulo <m>p</m> if and only if <m>p \equiv 1,7 \pmod{8}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Think about the possible cardinalities of the set <m>\{2,4, \ldots, p-1\}</m>.  You may find  <xref ref="definition-quadratic_residues"/>, <xref ref="definition-congruence"/>, and <xref ref="proposition-gauss_lemma"/> useful.
+    </p>
+  </proof>
+</proposition>
+
 </section>
+

@@ -4,7 +4,7 @@
   <title>Chinese Remainder Theorem</title>
 
   <p>
-    Imagine you are an ancient astronomer tasked with synchronizing the heavens. You are tracking two major cycles that govern the seasons and the tides: 
+    Imagine you are an ancient astronomer tracking two major cycles that govern the seasons and the tides: 
   
 
     <ol>
@@ -22,11 +22,11 @@
     </ol>
 
   
-    As you record your observations this year, you notice a discrepancy: the Winter Solstice has just occurred, but the New Moon is not for another 11 days.  You wish to know how far back in time one must travel to find the theoretical "Year Zero" — the legendary day when the Winter Solstice and the New Moon happened at the exact same moment.  If we let <m>x</m> be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: <m>x \equiv 0 \pmod{365}</m>  (The sun has completed its cycles perfectly) <m>x \equiv -11 \pmod{29}</m>   (The moon is 11 days short of completing its next cycle) 
+    As you record your observations this year, you notice that the Winter Solstice has just occurred, but the New Moon is not for another 11 days.  How many days have past since the last "Year Zero" when the Winter Solstice and the New Moon happened at the exact same moment.  If we let <m>x</m> be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: <m>x \equiv 0 \pmod{365}</m>  (The sun has completed its cycles perfectly) <m>x \equiv -11 \pmod{29}</m>   (The moon is 11 days short of completing its next cycle) 
   </p>
 
   <p>
-    This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences.  In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon.  Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem.
+    This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences.  In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon.  Ancient Chinese mathematicians solved this problem and for this reason we call it the <term>Chinese Remainder Theorem</term>.
   </p>
 
   <definition xml:id="definition-system_of_congruences">
@@ -69,7 +69,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  First show existence, then uniqueness.  There exists integers <m>s_1, s_2</m>such that <m> m_1s_1 + m_2s_2 = a_1-a_2</m> (why???).  Show <m>x = a_1 - m_1s_1</m> is a solution to the system of congruences.  Now show that there is a unique solution modulo <m>M</m>.  Suppose that <m>x_1</m> and <m>x_2</m> are two solutions.  Then <m>x_1 \equiv x_2 \pmod{m_1}</m> and <m>x_1 \equiv x_2 \pmod{m_2}</m>.  Show that this implies <m>x_1 \equiv x_2 \pmod{mn}</m>.   You may find  <xref ref="definition-relatively_prime"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>, <xref ref="definition-congruence"/>,  <xref ref="proposition-relatively_prime_product_divides"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
+      Try a direct proof.  First show existence, then uniqueness.  There exists integers <m>s_1, s_2</m> such that <m> m_1s_1 + m_2s_2 = a_1-a_2</m> (why???).  Show <m>x = a_1 - m_1s_1</m> is a solution to the system of congruences.  Now show that there is a unique solution modulo <m>M</m>.  Suppose that <m>x_1</m> and <m>x_2</m> are two solutions.  Then <m>x_1 \equiv x_2 \pmod{m_1}</m> and <m>x_1 \equiv x_2 \pmod{m_2}</m>.  Show that this implies <m>x_1 \equiv x_2 \pmod{mn}</m>.   You may find  <xref ref="definition-relatively_prime"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>, <xref ref="definition-congruence"/>,  <xref ref="proposition-relatively_prime_product_divides"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
     </p>
   </proof>
 </proposition>
