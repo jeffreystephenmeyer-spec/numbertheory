@@ -1060,7 +1060,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Chinese Remainder Theorem",
-  "body": " Chinese Remainder Theorem  Imagine you are an ancient astronomer tasked with synchronizing the heavens. You are tracking two major cycles that govern the seasons and the tides:    The Solar Cycle: The sun returns to its winter solstice position every 365 days.     The Lunar Cycle: The moon returns to its \"New Moon\" phase every 29 days.   As you record your observations this year, you notice a discrepancy: the Winter Solstice has just occurred, but the New Moon is not for another 11 days. You wish to know how far back in time one must travel to find the theoretical \"Year Zero\" — the legendary day when the Winter Solstice and the New Moon happened at the exact same moment. If we let be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: (The sun has completed its cycles perfectly) (The moon is 11 days short of completing its next cycle)  This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences. In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon. Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem.   System of Congruences   Given , , a system of congruences is a set of congruence equations. In symbols, a system of congruences looks is:   A solution to a system of congruences is an integer that satisfies all the congruences simultaneously.    As is often the case, we will want to understand if a solution exists, and if so, how many solutions there are.   Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.    Observe that the proof is constructive . It gives us a method for explicitly finding the solution.   Pairwise Relatively Prime   Given integers , we say they are pairwise relatively prime if for all .     Iterative Criterion for Pairwise Relatively Prime Integers   If are positive integers, then they are pairwise relatively prime if and only if and are relatively prime, and and are relatively prime    Try a direct proof. First show the forward direction. If are pairwise relatively prime, then and . Show that this implies . Now show the backward direction. If and are relatively prime, and and are relatively prime, then show that and . You may find , , and useful.     Chinese Remainder Theorem (General Version)   If , are pairwise relatively prime, then the system of congruences has a unique solution modulo .    Try a direct proof. Iterate the simple version of the Chinese Remainder Theorem. You may find , , useful.      Systems of Congruences   Solve each of the following systems of congruences.                    "
+  "body": " Chinese Remainder Theorem  Imagine you are an ancient astronomer tracking two major cycles that govern the seasons and the tides:    The Solar Cycle: The sun returns to its winter solstice position every 365 days.     The Lunar Cycle: The moon returns to its \"New Moon\" phase every 29 days.   As you record your observations this year, you notice that the Winter Solstice has just occurred, but the New Moon is not for another 11 days. How many days have past since the last \"Year Zero\" when the Winter Solstice and the New Moon happened at the exact same moment. If we let be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: (The sun has completed its cycles perfectly) (The moon is 11 days short of completing its next cycle)  This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences. In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon. Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem .   System of Congruences   Given , , a system of congruences is a set of congruence equations. In symbols, a system of congruences looks is:   A solution to a system of congruences is an integer that satisfies all the congruences simultaneously.    As is often the case, we will want to understand if a solution exists, and if so, how many solutions there are.   Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.    Observe that the proof is constructive . It gives us a method for explicitly finding the solution.   Pairwise Relatively Prime   Given integers , we say they are pairwise relatively prime if for all .     Iterative Criterion for Pairwise Relatively Prime Integers   If are positive integers, then they are pairwise relatively prime if and only if and are relatively prime, and and are relatively prime    Try a direct proof. First show the forward direction. If are pairwise relatively prime, then and . Show that this implies . Now show the backward direction. If and are relatively prime, and and are relatively prime, then show that and . You may find , , and useful.     Chinese Remainder Theorem (General Version)   If , are pairwise relatively prime, then the system of congruences has a unique solution modulo .    Try a direct proof. Iterate the simple version of the Chinese Remainder Theorem. You may find , , useful.      Systems of Congruences   Solve each of the following systems of congruences.                    "
+},
+{
+  "id": "chp4sec3-3",
+  "level": "2",
+  "url": "chp4sec3.html#chp4sec3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Chinese Remainder Theorem "
 },
 {
   "id": "definition-system_of_congruences",
@@ -1141,7 +1150,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Quadratic Residues",
-  "body": " Quadratic Residues     Quadratic Residues   If is an odd prime and relative prime to , then is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo . Otherwise, is a quadratic non-residue modulo .     Negative one is a square modulo when   If is an odd prime, then is a square modulo if and only if .    Try a direct proof. First show the backward direction. Then (why???). Write . Deduce . Now show the forward direction. If is a square modulo , then there exists an integer such that . Raise both sides to the power of . Show that and deduce that . You may find , , useful.     "
+  "body": " Quadratic Residues     Quadratic Residues   If is an odd prime and relative prime to , then is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo . Otherwise, is a quadratic non-residue modulo .     Negative one is a quadratic residue modulo when   If is an odd prime, then is a quadratic residue modulo if and only if .    Try a direct proof. First show the backward direction. Then (why???). Write . Deduce . Now show the forward direction. If is a quadratic residue modulo , then there exists an integer such that . Raise both sides to the power of . Show that and deduce that . You may find , , , , and useful.      Euler's Criterion   If is an odd prime and , then is a quadratic residue modulo if and only if .    First show the forward direction. Try a direct proof. Suppose is a quadratic residue modulo . Then there exists an integer such that . Raise both sides to the power of and interpret. Now show the backward direction. Try a proof by contrapositive. Suppose is not a quadratic residue modulo . For each nonzero least residue mod , , there exists a unique and distinct least residue such that (why???). Using these pairs, compute the factorial in two ways. You may find , , , , , and useful.     Centering Map   Fix an odd prime and an integer relatively prime to . Let be a least residue modulo . Let denote the least residue of modulo . Either or it is not. If it is not, then is a least residue less than or equal to (why???). We define the centering map modulo to be the self-map defined by      Centering Map is a Bijection   The centering map is a bijection.    First show this map is one-to-one and then deduce it is onto. Suppose and are least resides modulo such that . Show by three cases that . You may find , , , , and useful.     Flip count   If is an odd prime and relatively prime to , then define to be the number of elements in the set that are greater than . We will say is the flip count of modulo .     Gauss's Lemma   If is an odd prime and , then is a quadratic residue modulo if and only if is even.    Try a direct proof. Compute the product modulo of all elements in the set in two ways. Show . You may find , , , , , , and useful.     Two is a quadratic residue modulo when   If is an odd prime, then is a quadratic residue modulo if and only if .    Try a direct proof. Think about the possible cardinalities of the set . You may find , , and useful.    "
 },
 {
   "id": "definition-quadratic_residues",
@@ -1153,13 +1162,67 @@ var ptx_lunr_docs = [
   "body": " Quadratic Residues   If is an odd prime and relative prime to , then is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo . Otherwise, is a quadratic non-residue modulo .   "
 },
 {
-  "id": "proposition-negative_one_is_a_square_modulo_p_congruent_to_1_mod_4",
+  "id": "proposition-negative_one_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4",
   "level": "2",
-  "url": "chp5sec1.html#proposition-negative_one_is_a_square_modulo_p_congruent_to_1_mod_4",
+  "url": "chp5sec1.html#proposition-negative_one_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4",
   "type": "Proposition",
   "number": "5.1.2",
-  "title": "Negative one is a square modulo <span class=\"process-math\">\\(p\\)<\/span> when <span class=\"process-math\">\\(p \\equiv 1 \\pmod{4}\\)<\/span>.",
-  "body": " Negative one is a square modulo when   If is an odd prime, then is a square modulo if and only if .    Try a direct proof. First show the backward direction. Then (why???). Write . Deduce . Now show the forward direction. If is a square modulo , then there exists an integer such that . Raise both sides to the power of . Show that and deduce that . You may find , , useful.   "
+  "title": "Negative one is a quadratic residue modulo <span class=\"process-math\">\\(p\\)<\/span> when <span class=\"process-math\">\\(p \\equiv 1 \\pmod{4}\\)<\/span>.",
+  "body": " Negative one is a quadratic residue modulo when   If is an odd prime, then is a quadratic residue modulo if and only if .    Try a direct proof. First show the backward direction. Then (why???). Write . Deduce . Now show the forward direction. If is a quadratic residue modulo , then there exists an integer such that . Raise both sides to the power of . Show that and deduce that . You may find , , , , and useful.   "
+},
+{
+  "id": "proposition-eulers_criterion",
+  "level": "2",
+  "url": "chp5sec1.html#proposition-eulers_criterion",
+  "type": "Proposition",
+  "number": "5.1.3",
+  "title": "Euler’s Criterion.",
+  "body": " Euler's Criterion   If is an odd prime and , then is a quadratic residue modulo if and only if .    First show the forward direction. Try a direct proof. Suppose is a quadratic residue modulo . Then there exists an integer such that . Raise both sides to the power of and interpret. Now show the backward direction. Try a proof by contrapositive. Suppose is not a quadratic residue modulo . For each nonzero least residue mod , , there exists a unique and distinct least residue such that (why???). Using these pairs, compute the factorial in two ways. You may find , , , , , and useful.   "
+},
+{
+  "id": "definition-centering_map",
+  "level": "2",
+  "url": "chp5sec1.html#definition-centering_map",
+  "type": "Definition",
+  "number": "5.1.4",
+  "title": "Centering Map.",
+  "body": " Centering Map   Fix an odd prime and an integer relatively prime to . Let be a least residue modulo . Let denote the least residue of modulo . Either or it is not. If it is not, then is a least residue less than or equal to (why???). We define the centering map modulo to be the self-map defined by    "
+},
+{
+  "id": "proposition-centering_map_is_bijection",
+  "level": "2",
+  "url": "chp5sec1.html#proposition-centering_map_is_bijection",
+  "type": "Proposition",
+  "number": "5.1.5",
+  "title": "Centering Map is a Bijection.",
+  "body": " Centering Map is a Bijection   The centering map is a bijection.    First show this map is one-to-one and then deduce it is onto. Suppose and are least resides modulo such that . Show by three cases that . You may find , , , , and useful.   "
+},
+{
+  "id": "definition-flip_function",
+  "level": "2",
+  "url": "chp5sec1.html#definition-flip_function",
+  "type": "Definition",
+  "number": "5.1.6",
+  "title": "Flip count.",
+  "body": " Flip count   If is an odd prime and relatively prime to , then define to be the number of elements in the set that are greater than . We will say is the flip count of modulo .   "
+},
+{
+  "id": "proposition-gauss_lemma",
+  "level": "2",
+  "url": "chp5sec1.html#proposition-gauss_lemma",
+  "type": "Proposition",
+  "number": "5.1.7",
+  "title": "Gauss’s Lemma.",
+  "body": " Gauss's Lemma   If is an odd prime and , then is a quadratic residue modulo if and only if is even.    Try a direct proof. Compute the product modulo of all elements in the set in two ways. Show . You may find , , , , , , and useful.   "
+},
+{
+  "id": "proposition-two_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4",
+  "level": "2",
+  "url": "chp5sec1.html#proposition-two_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4",
+  "type": "Proposition",
+  "number": "5.1.8",
+  "title": "Two is a quadratic residue modulo <span class=\"process-math\">\\(p\\)<\/span> when <span class=\"process-math\">\\(p \\equiv \\pm 1 \\pmod{8}\\)<\/span>.",
+  "body": " Two is a quadratic residue modulo when   If is an odd prime, then is a quadratic residue modulo if and only if .    Try a direct proof. Think about the possible cardinalities of the set . You may find , , and useful.   "
 },
 {
   "id": "chp5sec2",
